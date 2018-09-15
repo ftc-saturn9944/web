@@ -1,8 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Routes from './Routes';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import 'bootstrap';
+import './scss/saturn.scss';
+
+import {
+    HashRouter,
+} from 'react-router-dom';
+
+ReactDOM.render(<HashRouter><Routes /></HashRouter>, document.getElementById('root'));
 registerServiceWorker();

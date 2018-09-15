@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router';
 
-import Main from './pages/Main';
+import TeamInfo from './pages/TeamInfo';
+import MediaKit from './pages/MediaKit';
 
 import {
   Route, Switch
@@ -12,9 +13,9 @@ class Routes extends Component {
     return (
       <div>
         <Switch>
-          <Route exact path='/' component={Main} />
-
-          <Route path="*" component={Main} />
+          <Route exact path='/' component={TeamInfo} />
+          <Route exact path='/media' component={MediaKit}/>
+          <Route path="*" component={TeamInfo} />
         </Switch>
       </div>
     );

@@ -10,6 +10,7 @@ class Main extends Component {
                     <li>Michael</li>
                     <li>Princeton</li>
                     <li>Ricky</li>
+                    <li>Joseph</li>
                 </ul>
             </div>
         );

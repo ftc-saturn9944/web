@@ -6,6 +6,9 @@ class Main extends Component {
             <div className="App">
                 Future home of team SATURN
                 <p>Yeah... We've got work to do...</p>
+                <ul>
+                    <li>Michael</li>
+                </ul>
             </div>
         );
     }

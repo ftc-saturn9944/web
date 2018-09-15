@@ -13,6 +13,7 @@ class Main extends Component {
                     <li>Joseph</li>
                     <li>Sofia</li>
                     <li>Vincent</li>
+                    <li>Billy</li>
                 </ul>
             </div>
         );

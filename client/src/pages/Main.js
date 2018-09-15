@@ -14,6 +14,7 @@ class Main extends Component {
                     <li>Sofia</li>
                     <li>Vincent</li>
                     <li>Billy</li>
+                    <li>Breanna</li>
                 </ul>
             </div>
         );

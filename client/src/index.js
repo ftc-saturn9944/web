@@ -12,4 +12,5 @@ import {
 } from 'react-router-dom';
 
 ReactDOM.render(<HashRouter><Routes /></HashRouter>, document.getElementById('root'));
+
 registerServiceWorker();

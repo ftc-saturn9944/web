@@ -8,6 +8,7 @@ class Main extends Component {
                 <p>Yeah... We've got work to do...</p>
                 <ul>
                     <li>Michael</li>
+                    <li>Princeton</li>
                 </ul>
             </div>
         );

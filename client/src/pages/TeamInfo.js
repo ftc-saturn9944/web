@@ -42,6 +42,9 @@ class TeamInfo extends Component {
                                 <div class="card-body">
                                     <h5 class="card-title">Why compete in robot leagues?</h5>
                                     <p class="card-text">
+                                        <p>
+                                            SATURN is the robotics team of Mandarin High School, located in Jacksonville, Florida. SATURN consists of students in their freshman year all the way up to their senior year.
+                                        </p>
                                         <ul>
                                             <li>Combine our skills to create a fully-functioning robot</li>
                                             <li>Take part in FTC competitions for the chance to win awards and scholarships</li>

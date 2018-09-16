@@ -8,10 +8,10 @@ class TeamInfo extends Component {
         const carouselIndicators = [];
         const imageComponents = [];
         images.forEach((name, index) => {
-            carouselIndicators.push(<li data-target="#carouselComponent" data-slide-to={index} key={index} className={index == 0 ? "active" : "other"}></li>);
+            carouselIndicators.push(<li data-target="#carouselComponent" data-slide-to={index} key={index} className={index === 0 ? "active" : "other"}></li>);
             imageComponents.push(
-                <div className={`carousel-item${index == 0 ? " active" : ""}`}>
-                    <img className="d-block mx-auto" src={`/images/${name}`} max-width="100%" max-height="100%" />
+                <div className={`carousel-item${index === 0 ? " active" : ""}`}>
+                    <img className="d-block mx-auto" src={`/images/${name}`} max-width="100%" max-height="100%" alt="" />
                 </div>
             );
         });

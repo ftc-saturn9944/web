@@ -55,6 +55,24 @@ class TeamInfo extends Component {
                                 </div>
                             </div>
                         </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Want to contact us?</h5>
+                                    <p class="card-text">
+                                        <p>
+                                            <a href="mailto:mandarinrobotics@gmail.com">mandarinrobotics@gmail.com</a>
+                                            <address>
+                                                <strong>Mandarin High School</strong><br />
+                                                <a href="https://goo.gl/maps/53foqmBn24q" target="_blank">
+                                                    4831 Greenland Rd, Jacksonville, FL 32258, United States
+                                                </a>
+                                            </address>
+                                        </p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

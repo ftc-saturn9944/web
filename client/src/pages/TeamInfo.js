@@ -3,7 +3,7 @@ import Navbar from '../Navbar';
 
 class TeamInfo extends Component {
     render() {
-        const images = ["meet1.jpg", "meet1.jpg", "meet1.jpg", "meet1.jpg", "meet1.jpg"];
+        const images = ["unf.jpg", "meet1.jpg", "meet2.jpg", "scorpion.jpg", "trophy.jpg"];
 
         const carouselIndicators = [];
         const imageComponents = [];

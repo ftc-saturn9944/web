@@ -20,6 +20,9 @@ class Navbar extends Component {
                             <a className="nav-link" href="#/media">Media Kit</a>
                         </li>
                         <li className="nav-item">
+                            <a className="nav-link" href="#/sponsors">Sponsors</a>
+                        </li>
+                        <li className="nav-item">
                             <a className="nav-link" href="#">Points counter</a>
                         </li>
                         <li className="nav-item">

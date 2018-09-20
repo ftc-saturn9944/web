@@ -86,6 +86,7 @@ class TeamInfo extends Component {
                                         </p>
                                         <ul>
                                             <li>Your logo will be visible on our website and marketing materials.</li>
+                                            <li>Your logo can be put on our robot. </li>
                                         </ul>
                                     </p>
                                 </div>

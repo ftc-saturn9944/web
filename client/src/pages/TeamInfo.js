@@ -74,6 +74,25 @@ class TeamInfo extends Component {
                             </div>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Why sponsor us?</h5>
+                                    <p class="card-text">
+                                        <p>
+                                            Building robots is expensive. By sponsoring us you are helping
+                                            the future generation become engineers/programmers.
+                                        </p>
+                                        <ul>
+                                            <li>Your logo will be visible on our website and marketing materials.</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         );

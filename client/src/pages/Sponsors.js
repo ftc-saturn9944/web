@@ -29,7 +29,9 @@ class Sponsors extends Component {
                     <hr></hr>
                     <div id="sponsor-info">
                         <h2>Why sponsor us?</h2>
-                        <p>By sponsoring our team you are investing in a generation of engineers, programmers, and inventors. (I need someone to write this)</p>
+                        <p>By sponsoring our team you are investing in a generation of engineers, programmers, and inventors. Also you can adverstive your company and it will be seen by a few thousand people throughout the season.
+                            
+                        </p>
                     </div>
                 </div>
             </div>

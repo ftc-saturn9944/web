@@ -36,12 +36,12 @@ class TeamInfo extends Component {
                     </a>
                 </div>
                 <div className="container-fluid">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Why compete in robot leagues?</h5>
-                                    <p class="card-text">
+                    <div className="row">
+                        <div className="col-sm-6">
+                            <div className="card">
+                                <div className="card-body">
+                                    <h5 className="card-title">Why compete in robot leagues?</h5>
+                                    <div className="card-text">
                                         <p>
                                             SATURN is the robotics team of Mandarin High School, located in Jacksonville, Florida. SATURN consists of students in their freshman year all the way up to their senior year.
                                         </p>
@@ -51,15 +51,15 @@ class TeamInfo extends Component {
                                             <li>Learn great skills that will prepare us for future careers</li>
                                             <li>Perfect the art of gracious professionalism</li>
                                         </ul>
-                                    </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Want to contact us?</h5>
-                                    <p class="card-text">
+                        <div className="col-sm-6">
+                            <div className="card">
+                                <div className="card-body">
+                                    <h5 className="card-title">Want to contact us?</h5>
+                                    <div className="card-text">
                                         <p>
                                             <a href="mailto:mandarinrobotics@gmail.com">mandarinrobotics@gmail.com</a>
                                             <address>
@@ -69,17 +69,17 @@ class TeamInfo extends Component {
                                                 </a>
                                             </address>
                                         </p>
-                                    </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Why sponsor us?</h5>
-                                    <p class="card-text">
+                    <div className="row">
+                        <div className="col-sm-6">
+                            <div className="card">
+                                <div className="card-body">
+                                    <h5 className="card-title">Why sponsor us?</h5>
+                                    <div className="card-text">
                                         <p>
                                             Building robots is expensive. By sponsoring us you are helping
                                             the future generation become engineers/programmers.
@@ -91,13 +91,13 @@ class TeamInfo extends Component {
                                         <div className="text-left">
                                             <a className="btn btn-primary" href="#/sponsors">More info</a>
                                         </div>
-                                    </p>
+                                    </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
+
             </div>
         );
     }

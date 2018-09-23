@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Navbar from '../Navbar';
+import Navbar from '../components/Navbar';
 
 class TeamInfo extends Component {
     render() {
@@ -36,60 +36,62 @@ class TeamInfo extends Component {
                     </a>
                 </div>
                 <div className="container-fluid">
-                    <div className="row">
-                        <div className="col-sm-6">
-                            <div className="card">
-                                <div className="card-body">
-                                    <h5 className="card-title">Why compete in robot leagues?</h5>
-                                    <div className="card-text">
-                                        <p>
-                                            SATURN is the robotics team of Mandarin High School, located in Jacksonville, Florida. SATURN consists of students in their freshman year all the way up to their senior year.
+                    <div id="card-holder">
+                        <div className="row">
+                            <div className="col-sm-6">
+                                <div className="card">
+                                    <div className="card-body">
+                                        <h5 className="card-title">Why compete in robot leagues?</h5>
+                                        <div className="card-text">
+                                            <p>
+                                                SATURN is the robotics team of Mandarin High School, located in Jacksonville, Florida. SATURN consists of students in their freshman year all the way up to their senior year.
                                         </p>
-                                        <ul>
-                                            <li>Combine our skills to create a fully-functioning robot</li>
-                                            <li>Take part in FTC competitions for the chance to win awards and scholarships</li>
-                                            <li>Learn great skills that will prepare us for future careers</li>
-                                            <li>Perfect the art of gracious professionalism</li>
-                                        </ul>
+                                            <ul>
+                                                <li>Combine our skills to create a fully-functioning robot</li>
+                                                <li>Take part in FTC competitions for the chance to win awards and scholarships</li>
+                                                <li>Learn great skills that will prepare us for future careers</li>
+                                                <li>Perfect the art of gracious professionalism</li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-sm-6">
-                            <div className="card">
-                                <div className="card-body">
-                                    <h5 className="card-title">Want to contact us?</h5>
-                                    <div className="card-text">
-                                        <p>
-                                            <a href="mailto:mandarinrobotics@gmail.com">mandarinrobotics@gmail.com</a>
-                                            <address>
-                                                <strong>Mandarin High School</strong><br />
-                                                <a href="https://goo.gl/maps/53foqmBn24q" target="_blank">
-                                                    4831 Greenland Rd, Jacksonville, FL 32258, United States
+                            <div className="col-sm-6">
+                                <div className="card">
+                                    <div className="card-body">
+                                        <h5 className="card-title">Want to contact us?</h5>
+                                        <div className="card-text">
+                                            <p>
+                                                <a href="mailto:mandarinrobotics@gmail.com">mandarinrobotics@gmail.com</a>
+                                                <address>
+                                                    <strong>Mandarin High School</strong><br />
+                                                    <a href="https://goo.gl/maps/53foqmBn24q" target="_blank">
+                                                        4831 Greenland Rd, Jacksonville, FL 32258, United States
                                                 </a>
-                                            </address>
-                                        </p>
+                                                </address>
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-sm-6">
-                            <div className="card">
-                                <div className="card-body">
-                                    <h5 className="card-title">Why sponsor us?</h5>
-                                    <div className="card-text">
-                                        <p>
-                                            Building robots is expensive. By sponsoring us you are helping
-                                            the future generation become engineers/programmers.
+                        <div className="row">
+                            <div className="col-sm-6">
+                                <div className="card">
+                                    <div className="card-body">
+                                        <h5 className="card-title">Why sponsor us?</h5>
+                                        <div className="card-text">
+                                            <p>
+                                                Building robots is expensive. By sponsoring us you are helping
+                                                the future generation become engineers/programmers.
                                         </p>
-                                        <ul>
-                                            <li>Your logo will be visible on our website and marketing materials.</li>
-                                            <li>Your logo can be put on our robot. </li>
-                                        </ul>
-                                        <div className="text-left">
-                                            <a className="btn btn-primary" href="#/sponsors">More info</a>
+                                            <ul>
+                                                <li>Your logo will be visible on our website and marketing materials.</li>
+                                                <li>Your logo can be put on our robot. </li>
+                                            </ul>
+                                            <div className="text-left">
+                                                <a className="btn btn-outline-dark" href="#/sponsors">More info</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

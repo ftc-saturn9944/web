@@ -4,7 +4,7 @@ import { withRouter } from 'react-router';
 import TeamInfo from './pages/TeamInfo';
 import MediaKit from './pages/MediaKit';
 import Sponsors from './pages/Sponsors';
-import PointCounter from './pages/PointCounter';
+import PointCounter from './pages/PointCounter'
 
 import {
   Route, Switch

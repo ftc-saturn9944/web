@@ -31,7 +31,7 @@ class Sponsors extends Component {
                                     <div className="sponsor-card card">
                                     <div className="card-body">
                                     <a className="sponsor-name" href="http://http://renaissancejax.org/"><h4>Renaissance Jax</h4></a>
-                                    <img className="sponsor-img shadow-sm text-center" src="/images/sponsors/Renaissance Jax logo.png">
+                                    <img className="sponsor-img shadow-sm text-center" src="/downloads/sponsors/RenaissanceJaxlogo.png">
                                     </img>
                                     </div>
                                     </div>

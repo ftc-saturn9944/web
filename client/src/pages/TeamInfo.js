@@ -36,7 +36,7 @@ class TeamInfo extends Component {
                     </a>
                 </div>
                 <div className="container-fluid">
-                    <div id="card-holder">
+                    <div class="card-holder">
                         <div className="row">
                             <div className="col-sm-6">
                                 <div className="card">
@@ -90,7 +90,7 @@ class TeamInfo extends Component {
                                                 <li>Your logo can be put on our robot. </li>
                                             </ul>
                                             <div className="text-left">
-                                                <a className="btn btn-outline-dark" href="#/sponsors">More info</a>
+                                                <a className="btn btn-outline-dark" href="#/sponsors#sponsor-info">More info</a>
                                             </div>
                                         </div>
                                     </div>

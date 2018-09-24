@@ -40,8 +40,8 @@ class TeamInfo extends Component {
                         <div className="row">
                             <div className="col-sm-6">
                                 <div className="card">
+                                    <h5 className="card-header">Why compete in robot leagues?</h5>
                                     <div className="card-body">
-                                        <h5 className="card-title">Why compete in robot leagues?</h5>
                                         <div className="card-text">
                                             <p>
                                                 SATURN is the robotics team of Mandarin High School, located in Jacksonville, Florida. SATURN consists of students in their freshman year all the way up to their senior year.
@@ -58,10 +58,11 @@ class TeamInfo extends Component {
                             </div>
                             <div className="col-sm-6">
                                 <div className="card">
+                                    <h5 className="card-header">Want to contact us?</h5>
                                     <div className="card-body">
-                                        <h5 className="card-title">Want to contact us?</h5>
                                         <div className="card-text">
                                             <p>
+                                                <strong>Email</strong> <br />
                                                 <a href="mailto:mandarinrobotics@gmail.com">mandarinrobotics@gmail.com</a>
                                                 <address>
                                                     <strong>Mandarin High School</strong><br />
@@ -78,8 +79,8 @@ class TeamInfo extends Component {
                         <div className="row">
                             <div className="col-sm-6">
                                 <div className="card">
+                                    <h5 className="card-header">Why sponsor us?</h5>
                                     <div className="card-body">
-                                        <h5 className="card-title">Why sponsor us?</h5>
                                         <div className="card-text">
                                             <p>
                                                 Building robots is expensive. By sponsoring us you are helping

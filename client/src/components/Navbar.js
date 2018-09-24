@@ -4,7 +4,7 @@ class Navbar extends Component {
 
     render() {
         return (
-            <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+            <nav className="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
                 <a className="navbar-brand" href="#/">
                     <img src="/images/saturn-logo.png" alt="Logo" />
                 </a>

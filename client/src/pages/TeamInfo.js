@@ -18,7 +18,7 @@ class TeamInfo extends Component {
 
         return (
             <div className="App">
-                <Navbar />
+                <Navbar page="team-info" />
                 <div id="carouselComponent" className="carousel slide" data-ride="carousel">
                     <ol className="carousel-indicators">
                         {carouselIndicators}
@@ -36,7 +36,7 @@ class TeamInfo extends Component {
                     </a>
                 </div>
                 <div className="container-fluid">
-                    <div class="card-holder">
+                    <div className="card-holder">
                         <div className="row">
                             <div className="col-sm-6">
                                 <div className="card">

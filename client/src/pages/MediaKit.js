@@ -5,7 +5,7 @@ class MediaKit extends Component {
     render() {
         return (
             <div className="App">
-                <Navbar />
+                <Navbar page="media-kit" />
                 Media Kit
             </div>
         );

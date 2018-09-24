@@ -87,7 +87,7 @@ class PointCounter extends Component {
     render() {
         return (
             <div className="App">
-                <Navbar />
+                <Navbar page="point-counter" />
                 <div className="container-fluid">
                     <div className="card-holder">
                         <h1>Rover Ruckus Points Counter</h1>

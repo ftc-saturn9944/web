@@ -63,6 +63,7 @@ class PointCounter extends Component {
                 <Navbar />
                 <div className="container-fluid">
                     <div className="card-holder">
+                        <h1>Rover Ruckus Points Counter</h1>
                         <form>
                             <div className="row">
                                 <div className="col-md-4 mb-4">

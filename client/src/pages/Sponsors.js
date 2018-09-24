@@ -25,17 +25,17 @@ class Sponsors extends Component {
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div className="col-md-4">
-                        <div className="sponsor-card card">
-                            <div className="card-body">
-                                <a className="sponsor-name" href="http://renaissancejax.org/"><h4>Renaissance Jax</h4></a>
-                                <img className="sponsor-img shadow-sm text-center" src="/images/sponsors/renjax.png">
-                                </img>
+                        <div className="col-md-3">
+                            <div className="sponsor-card card">
+                                <div className="card-body">
+                                    <a className="sponsor-name" href="http://renaissancejax.org/"><h4>Renaissance Jax</h4></a>
+                                    <img className="sponsor-img shadow-sm text-center" src="/images/sponsors/renjax.png">
+                                    </img>
+                                </div>
                             </div>
                         </div>
                     </div>
+
 
                     <hr></hr>
                     <div id="sponsor-info">

@@ -98,7 +98,25 @@ class TeamInfo extends Component {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> 
+                    <div className="row">
+                            <div className="col-sm-6">
+                                <div className="card">
+                                    <h5 className="card-header">We are no joke.</h5>
+                                    <div className="card-body">
+                                        <div className="card-text">
+                                            <p>
+                                                One of our most interactive students has made the books. Joesph
+                                                Delcastillo has made the news for being the STEM student of the week.
+                                            </p>
+                                            <div className="text-left">
+                                                <a className="btn btn-outline-dark" href="https://www.firstcoastnews.com/video/news/education/stem-student-of-the-week/stem-student-of-the-week-mandarin-hs-senior-big-on-robotics/77-8253943">Learn more here</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                 </div>
 
             </div>

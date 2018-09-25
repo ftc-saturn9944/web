@@ -38,11 +38,16 @@ class Sponsors extends Component {
                         </div>
                     </div>
                     <hr></hr>
-                    <div id="sponsor-info">
+                    <div id="sponsor-info" style={{ maxWidth: '1000px' }}>
                         <h2>Why sponsor us?</h2>
-                        <p>By sponsoring our team you are investing in a generation of engineers, programmers, and inventors who could be working for your company. This website will be viewed by thousands of people who would view your company throughout the season.
-                           Unlike most teams our team relies mostly on donations and our members are not given a fee. The more donations we recieve the farther we will go in the competition and will be more succesful throughout the season. Last season we made it all the way to the state championship and we plan on going farther than that this season and going nationals this year.
-                           Our team consists of 20 students and 3 mentors.
+                        <p>By sponsoring our team you are investing in a generation of engineers, programmers, and inventors who will go on to work and lead in STEM fields.
+                            The money you use to sponsor us will directly contribute to the development of our robot, as well as opportunities for students to learn and make something great.
+                            Unlike most teams, our members are not given a fee for joining our team. As such, our team relies mostly on sponsors to provide funding.
+                            This keeps our team free and open for any hard-working student to learn and become an expert robot builder.
+                        </p>
+                        <p>There are also a number of benefits for your company. <strong>Your brand will be seen by thousands of people at FTC events, as well as by visitors to our website. </strong>
+                            Last season we made it all the way to the state championship with hundreds of people in attendance. With your help, we plan on making it there again and even beyond that to the national championship.
+                            The more sponsors we have, the farther we can go in competition and the more successful we will be throughout the season.
                         </p>
                     </div>
                 </div>

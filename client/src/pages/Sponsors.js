@@ -46,7 +46,7 @@ class Sponsors extends Component {
                             This keeps our team free and open for any hard-working student to learn and become an expert robot builder.
                         </p>
                         <p>There are also a number of benefits for your company. <strong>Your brand will be seen by thousands of people at FTC events, as well as by visitors to our website. </strong>
-                            Last season we made it all the way to the state championship with hundreds of people in attendance. With your help, we plan on making it there again and even beyond that to the national championship.
+                            Last season we made it all the way to the state championship with many hundreds of people in attendance. With your help, we plan on making it there again and even beyond that to the national championship.
                             The more sponsors we have, the farther we can go in competition and the more successful we will be throughout the season.
                         </p>
                     </div>

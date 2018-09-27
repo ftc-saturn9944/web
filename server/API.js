@@ -37,10 +37,10 @@ app.post('/api/login', (req, res) => {
     if (username === 'test' && password === 'test') {
         // Make a JSON token
         let auth = {
-            iss: "saturn9944",
-            user: username,
-            iat: Date.now(),
-            exp: Date.now() + 3 * 24 * 60 * 60 * 1000
+            iss: "saturn9944",                          // Token Issuer (us)
+            user: username,                             // User that is using this token
+            iat: Date.now(),                            // Issued at
+            exp: Date.now() + 3 * 24 * 60 * 60 * 1000   // Expires after 3 days
         };
 
         // By signing the token with our secret signature key, we are sure noone can make their own token.

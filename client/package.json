@@ -29,6 +29,7 @@
     "html-webpack-plugin": "2.29.0",
     "jest": "20.0.4",
     "jquery": "^3.3.1",
+    "jsonwebtoken": "^8.3.0",
     "node-sass": "^4.9.3",
     "object-assign": "4.1.1",
     "popper.js": "^1.14.4",
@@ -56,6 +57,7 @@
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom"
   },
+  "proxy": "http://localhost:5000",
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,mjs}"

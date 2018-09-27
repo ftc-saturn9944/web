@@ -28,6 +28,8 @@ class Navbar extends Component {
     }
 
     render() {
+        const loggedIn = localStorage.getItem("authKey") !== null;
+        console.log("Logged in:", loggedIn);
         return (
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark"> {/* I removed fixed-top because it was obscuring parts of the page. Though a fixed navbar would be good, until we get that fixed (hehe) we should keep it as is.*/}
                 <a className="navbar-brand" href="#/">
@@ -54,7 +56,7 @@ class Navbar extends Component {
                         <li className="nav-item" id="registration">
                             <a className="nav-link disabled" href="javascript:void;">Registration</a>
                         </li>
-                        <li className="nav-item" id="login">
+                        <li className={"nav-item"+(loggedIn? " invisible" : "")} id="login">
                             <a className="nav-link" href="#/login">Login</a>
                         </li>
 

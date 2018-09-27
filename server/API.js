@@ -7,10 +7,11 @@ const morgan = require('morgan') //Morgan - Server Logger
 
 const uuid = require('uuid/v4');
 const jwt = require('jsonwebtoken');
+const mongo = require('./mongo')();
 
 // This creates a random signature key. This makes sure the signature key changes every time the
 // server restarts so if anyone ever stole the key, it'd be useless as soon as we restart the server.
-const jwtKey = uuid();
+const jwtKey = process.env.PORT ? uuid() : 'saturn';
 
 const app = express();
 
@@ -30,31 +31,35 @@ app.get('/api/hello', (req, res) => {
 
 // The login API
 app.post('/api/login', (req, res) => {
+
     const username = req.body.username;
     const password = req.body.password;
+    mongo.getUser(username, password, (user) => {
+        if (!user) res.status(401).send();
+        else {
+            // Make a JSON token
+            let auth = {
+                iss: "saturn9944",                          // Token Issuer (us)
+                username: user.username,                             // User that is using this token
+                firstname: user.firstName,
+                lastname: user.lastName,
+                iat: Date.now(),                            // Issued at
+                exp: Date.now() + 3 * 24 * 60 * 60 * 1000   // Expires after 3 days
+            };
+
+            // By signing the token with our secret signature key, we are sure noone can make their own token.
+            // Later, we use the key to verify the signature to make sure the tokens are valid.
+            signedToken = jwt.sign(auth, jwtKey);
+
+            // Send the token back to the caller. Then every request they make, they can resend that token back to
+            // us through the "Authorization" request header and if valid, we know who the user is.
+            res.status(200).send({ token: signedToken });
+        }
+    });
 
     // Very naive implementation for now
-    if (username === 'test' && password === 'test') {
-        // Make a JSON token
-        let auth = {
-            iss: "saturn9944",                          // Token Issuer (us)
-            user: username,                             // User that is using this token
-            iat: Date.now(),                            // Issued at
-            exp: Date.now() + 3 * 24 * 60 * 60 * 1000   // Expires after 3 days
-        };
 
-        // By signing the token with our secret signature key, we are sure noone can make their own token.
-        // Later, we use the key to verify the signature to make sure the tokens are valid.
-        signedToken = jwt.sign(auth, jwtKey);
 
-        // Send the token back to the caller. Then every request they make, they can resend that token back to
-        // us through the "Authorization" request header and if valid, we know who the user is.
-        res.status(200).send({ token: signedToken });
-    }
-    else {
-        // Access denied, fool!
-        res.status(401).send({});
-    }
 });
 
 // Load the submodules

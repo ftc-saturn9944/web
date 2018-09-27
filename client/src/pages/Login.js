@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from '../components/Navbar';
+import jwt from 'jsonwebtoken';
 class Login extends Component {
 
     submit = e => {
@@ -12,10 +13,24 @@ class Login extends Component {
             headers: {
                 "Content-Type": "application/json; charset=utf-8"
             },
-            body: JSON.stringify({ username: username, password: password })
-        }).then((res) => { return res.json() })
-            .then((data) => {
-                document.getElementById("token").value = data.token;
+            body: JSON.stringify({ username, password })
+        }).then(res => {
+            if (res.status === 200) return res.json()
+            else return { error: 'bye' }
+        })
+            .then(data => {
+                if (data.token) {
+                    let user = jwt.decode(data.token);
+                    localStorage.setItem('authKey', data.token);
+                    localStorage.setItem('firstName', user.firstname);
+                    localStorage.setItem('lastName', user.lastname);
+                    localStorage.setItem('userName', user.username);
+                    
+                    document.getElementById("token").innerHTML = data.token;
+                }
+                else {
+                    console.log("You fail")
+                }
             });
         //TODO Error handling on this
     }
@@ -24,8 +39,8 @@ class Login extends Component {
         return (
             <div className="App">
                 <Navbar page="login" />
-                <div class="container-fluid">
-                    <div class="card-holder">
+                <div className="container-fluid">
+                    <div className="card-holder">
                         <form>
                             <div className="form-group">
                                 <label htmlFor="username">Username</label>
@@ -33,7 +48,7 @@ class Login extends Component {
                                 <label htmlFor="username">Password</label>
                                 <input type="text" id="password" className="form-control w-50" placeholder="awesomeuser9944" aria-describedby="password" />
                                 <button type="submit" className="btn btn-dark my-2" onClick={this.submit}>Submit</button>
-                                <textarea type="text" className="form-control" id="token" placeholder="Token goes here" readOnly></textarea>
+                                <label type="text" className="form-control" id="token">Token goes here</label>
                             </div>
                         </form>
                     </div>

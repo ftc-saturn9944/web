@@ -1,3 +1,5 @@
+const mongo = require('./mongo')();
+
 module.exports = (app, validateAuthorization) => {
     app.get('/api/stats', (req, res) => {
         let jwt = validateAuthorization(req);
@@ -10,15 +12,22 @@ module.exports = (app, validateAuthorization) => {
         // If we make it this far, we know the user is authenticated so it's safe to proceed.
         // It also returned the jwt token for convenience in case we want it.
 
-        res.status(200).send({ result: `Good job, ${jwt.user}, you made it. But I have no stats yet.` });
+        mongo.getGameStats(data => {
+            res.status(200).send(data);
+        });
     });
 
     // Add more APIs for the stats (like POST, etc..) here. This creates modules for various groups of things we want
     // to do and keeps the code small.
 
-    /*
+
+    
     app.post('/api/stats', (req, res) => {
-        res.status(201).send();
+        mongo.addGameStats(req.body, () => {
+            res.status(201).send();
+        });
+        
+        
     });
-    */
+    
 }

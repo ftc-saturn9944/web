@@ -15,7 +15,11 @@
   "homepage": "https://github.com/saturn9944/web#readme",
   "scripts": {
     "start": "node index.js",
+    "xplatform-build": "cd client && npm install && npm run build && ncp build ../www",
     "heroku-postbuild": "cd client && npm install && npm run build && mv build ../www"
+  },
+  "devDependencies": {
+    "ncp": "2.0.0"
   },
   "dependencies": {
     "body-parser": "^1.18.3",

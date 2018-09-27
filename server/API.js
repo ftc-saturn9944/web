@@ -5,6 +5,13 @@ const bodyParser = require('body-parser');  //Body Parser - Allows us to access 
 const fileUpload = require('express-fileupload');
 const morgan = require('morgan') //Morgan - Server Logger
 
+const uuid = require('uuid/v4');
+const jwt = require('jsonwebtoken');
+
+// This creates a random signature key. This makes sure the signature key changes every time the
+// server restarts so if anyone ever stole the key, it'd be useless as soon as we restart the server.
+const jwtKey = uuid();
+
 const app = express();
 
 //Use the middleware that we want
@@ -21,6 +28,38 @@ app.get('/api/hello', (req, res) => {
     res.status(200).send('Hello SATURN');
 });
 
+// The login API
+app.post('/api/login', (req, res) => {
+    const username = req.body.username;
+    const password = req.body.password;
+
+    // Very naive implementation for now
+    if (username === 'test' && password === 'test') {
+        // Make a JSON token
+        let auth = {
+            iss: "saturn9944",
+            user: username,
+            iat: Date.now(),
+            exp: Date.now() + 3 * 24 * 60 * 60 * 1000
+        };
+
+        // By signing the token with our secret signature key, we are sure noone can make their own token.
+        // Later, we use the key to verify the signature to make sure the tokens are valid.
+        signedToken = jwt.sign(auth, jwtKey);
+
+        // Send the token back to the caller. Then every request they make, they can resend that token back to
+        // us through the "Authorization" request header and if valid, we know who the user is.
+        res.status(200).send({ token: signedToken });
+    }
+    else {
+        // Access denied, fool!
+        res.status(401).send({});
+    }
+});
+
+// Load the submodules
+require('./gamestats.js')(app, validateAuthorization);
+
 // The "catchall" handler: for any request that doesn't
 // match one above, send back React's index.html file.
 app.get('*', (req, res) => {
@@ -32,3 +71,42 @@ const port = process.env.PORT || 5000;
 app.listen(port);
 
 console.log(`Server listening on ${port}`);
+
+function validateAuthorization(req) {
+    var token = req.get('Authorization');
+    if (token === undefined) {
+        console.log("Attempt to get to a protected resource with no Auth token");
+        return null;
+    }
+    else {
+        if (token.startsWith("Bearer ")) token = token.substring(7);
+
+        try {
+            // Decode the token with the signature
+            let decoded = jwt.verify(token, jwtKey);
+            if (decoded.iss === 'saturn9944') { // Make sure we're the token issuer
+                if (decoded.exp < Date.now()) { // Make sure it's not an expired token
+                    console.log("Expired token " + decoded.user);
+                    return false;
+                }
+                return decoded;
+            }
+            else {
+                console.log("Attempt to get to a protected resource with an altered Auth token");
+                return null;
+            }
+        } catch (err) {
+            var ip = "undefined";
+            try {
+                ip = req.connection.remoteAddress;
+            } catch (ex) {
+                console.log(ex);
+            }
+
+            console.log(err);
+            console.log(token);
+            console.log("Attempt to get to a protected resource with an invalid Auth token remote IP: " + ip);
+            return null;
+        }
+    }
+}

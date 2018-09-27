@@ -54,6 +54,9 @@ class Navbar extends Component {
                         <li className="nav-item" id="registration">
                             <a className="nav-link disabled" href="javascript:void;">Registration</a>
                         </li>
+                        <li className="nav-item" id="login">
+                            <a className="nav-link" href="#/login">Login</a>
+                        </li>
 
 
                     </ul>

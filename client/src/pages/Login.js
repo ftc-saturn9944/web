@@ -7,7 +7,7 @@ class Login extends Component {
         e.preventDefault()
         let password = document.getElementById("password").value;
         let username = document.getElementById("username").value;
-        fetch("http://localhost:5000/api/login", {
+        fetch("/api/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json; charset=utf-8"

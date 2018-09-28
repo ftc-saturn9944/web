@@ -13,7 +13,7 @@ const Mongo = function () {
     }
     else {
         const decode = /^(mongodb:\/\/(?:.)*@?(?:[^\/])*)\/(.*)$/.exec(mongoUrl);
-        this.url = decode[1];
+        this.url = mongoUrl;
         this.dbName = decode[2];
     }
 

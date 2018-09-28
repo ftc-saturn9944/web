@@ -16,8 +16,6 @@ const Mongo = function () {
         this.url = mongoUrl;
         this.dbName = decode[2];
     }
-
-    console.log(this);
 };
 
 Mongo.prototype.getGameStats = function (next) {

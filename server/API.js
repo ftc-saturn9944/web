@@ -11,7 +11,7 @@ const mongo = require('./mongo')();
 
 // This creates a random signature key. This makes sure the signature key changes every time the
 // server restarts so if anyone ever stole the key, it'd be useless as soon as we restart the server.
-const jwtKey = process.env.PORT ? uuid() : 'saturn';
+const jwtKey = process.env.NODE_ENV === 'production' ? uuid() : 'saturn';
 
 const app = express();
 
@@ -75,7 +75,7 @@ app.get('*', (req, res) => {
 const port = process.env.PORT || 5000;
 app.listen(port);
 
-console.log(`Server listening on ${port}`);
+console.log(`Server listening on ${port} as ${process.env.NODE_ENV === 'production' ? 'LIVE' : 'TEST'} system`);
 
 function validateAuthorization(req) {
     var token = req.get('Authorization');

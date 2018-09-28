@@ -12,10 +12,12 @@ const Mongo = function () {
         this.dbName = "saturn";
     }
     else {
-        const decode = /^(mongodb:\/\/(?:.)*@(?:[^\/])*)\/(.*)$/.exec(mongoUrl);
+        const decode = /^(mongodb:\/\/(?:.)*@?(?:[^\/])*)\/(.*)$/.exec(mongoUrl);
         this.url = decode[1];
         this.dbName = decode[2];
     }
+
+    console.log(this);
 };
 
 Mongo.prototype.getGameStats = function (next) {

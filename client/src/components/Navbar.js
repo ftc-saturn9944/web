@@ -27,6 +27,10 @@ class Navbar extends Component {
         }
     }
 
+    logout() {
+        localStorage.clear();
+    }
+
     render() {
         const loggedIn = localStorage.getItem("authKey") !== null;
         console.log("Logged in:", loggedIn);
@@ -56,15 +60,15 @@ class Navbar extends Component {
                 </div>
                 <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
                     <ul class="navbar-nav ml-auto">
-                        <li class={"nav-item"+(loggedIn? "" : " invisible")} id="logoff">
-                            <a class="nav-link" href="#" onclick="localStorage.clear()">Log Off</a>
+                        <li class={"nav-item" + (loggedIn ? "" : " invisible")} id="logoff">
+                            <a class="nav-link" href="#" onClick={this.logout.bind(this)}>Log Off</a>
                         </li>
-                        <li class={"nav-item"+(loggedIn? " invisible" : "")} id="login">
+                        <li class={"nav-item" + (loggedIn ? " invisible" : "")} id="login">
                             <a class="nav-link" href="#/login">Log In</a>
                         </li>
                     </ul>
                 </div>
-            </nav>
+            </nav >
         );
     }
 }

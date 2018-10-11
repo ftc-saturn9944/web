@@ -52,7 +52,7 @@ class Login extends Component {
                                 <input type="text" id="password" className="form-control w-50" placeholder="awesomeuser9944" aria-describedby="password" />
                                 <button type="submit" className="btn btn-dark my-2" onClick={this.submit.bind(this)}>Submit</button>
                                 <div className="checkbox">
-                                    <label><input type="checkbox" id="redirect" checked="true" />Redirect to homepage?</label>
+                                    <label><input type="checkbox" id="redirect" defaultChecked="true" />Redirect to homepage?</label>
                                 </div>
                                 <br />
                                 <label htmlFor="token">JWT Token Goes Here:</label>

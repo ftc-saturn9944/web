@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Navbar from '../components/Navbar';
 import jwt from 'jsonwebtoken';
 class Login extends Component {
-
     submit = e => {
         console.log("hello");
         e.preventDefault()
@@ -25,8 +24,11 @@ class Login extends Component {
                     localStorage.setItem('firstName', user.firstname);
                     localStorage.setItem('lastName', user.lastname);
                     localStorage.setItem('userName', user.username);
-                    
-                    document.getElementById("token").innerHTML = data.token;
+
+
+                    if (document.getElementById("redirect").checked) //If the redirect box is checked, redirect them to the main page.
+                        window.location = "#/";
+                    document.location.reload(); //Otherwise reload so we can see our token
                 }
                 else {
                     console.log("You fail")
@@ -36,6 +38,7 @@ class Login extends Component {
     }
 
     render() {
+        var currentToken = localStorage.getItem("authKey"); //The token field will display the current auth token regardless of when it was generated.
         return (
             <div className="App">
                 <Navbar page="login" />
@@ -47,8 +50,13 @@ class Login extends Component {
                                 <input type="text" id="username" className="form-control w-50" placeholder="awesomeuser9944" aria-describedby="username" />
                                 <label htmlFor="username">Password</label>
                                 <input type="text" id="password" className="form-control w-50" placeholder="awesomeuser9944" aria-describedby="password" />
-                                <button type="submit" className="btn btn-dark my-2" onClick={this.submit}>Submit</button>
-                                <label type="text" className="form-control" id="token">Token goes here</label>
+                                <button type="submit" className="btn btn-dark my-2" onClick={this.submit.bind(this)}>Submit</button>
+                                <div className="checkbox">
+                                    <label><input type="checkbox" id="redirect" checked="true" />Redirect to homepage?</label>
+                                </div>
+                                <br />
+                                <label htmlFor="token">JWT Token Goes Here:</label>
+                                <textarea className="form-control" rows="3" id="token" value={currentToken} />
                             </div>
                         </form>
                     </div>

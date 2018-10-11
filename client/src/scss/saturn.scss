@@ -42,3 +42,13 @@ a:hover {
 .sponsor-img {
     width: 100%;
 }
+li.nav-item.invisible {
+    width: 0px;
+    height: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+#logged-in-as .navbar-text {
+    color: #7e7e7e;
+    font-weight: 400;
+}

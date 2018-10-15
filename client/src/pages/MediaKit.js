@@ -8,7 +8,7 @@ class MediaKit extends Component {
                 <Navbar page="media-kit" />'
                     <div className="container-fluid">
                         <div className="card-holder">
-                        <h2>Look What we have done!</h2>
+                        <h2>Look what we have done!</h2>
                             <div className="row">
                                 <div className="col-md-6">
                                     <div className="sponsor-card card">

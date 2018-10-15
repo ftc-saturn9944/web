@@ -10,10 +10,10 @@ class MediaKit extends Component {
                         <div className="card-holder">
                         <h2>Media Kit</h2>
                             <div className="row">
-                                <div className="col-md-7">
+                                <div className="col-md-6">
                                     <div className="sponsor-card card">
                                         <div className="card-body">
-                                        This is it
+                                        <a className="sponsor-name" href="http://www.ftcroot.com/teams/9944/SATURN"><h3>Past Team Scores</h3></a>
                                         </div>
                                     </div>
                                 </div>

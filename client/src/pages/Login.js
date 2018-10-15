@@ -48,8 +48,8 @@ class Login extends Component {
                             <div className="form-group">
                                 <label htmlFor="username">Username</label>
                                 <input type="text" id="username" className="form-control w-50" placeholder="awesomeuser9944" aria-describedby="username" />
-                                <label htmlFor="username">Password</label>
-                                <input type="text" id="password" className="form-control w-50" placeholder="awesomeuser9944" aria-describedby="password" />
+                                <label htmlFor="password">Password</label>
+                                <input type="password" id="password" className="form-control w-50" placeholder="awesomeuser9944" aria-describedby="password" />
                                 <button type="submit" className="btn btn-dark my-2" onClick={this.submit.bind(this)}>Submit</button>
                                 <div className="checkbox">
                                     <label><input type="checkbox" id="redirect" defaultChecked="true" />Redirect to homepage?</label>

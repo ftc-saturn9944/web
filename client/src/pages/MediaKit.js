@@ -13,22 +13,17 @@ class MediaKit extends Component {
                                 <div className="col-md-6">
                                     <div className="sponsor-card card">
                                         <div className="card-body">
-                                        <a className="btn btn-outline-dark" href="https://www.youtube.com/watch?v=TttTeH3yedw"><p>Want to watch?</p></a>
+                                        <a className="sponsor-name" href="https://www.youtube.com/watch?v=TttTeH3yedw"><h3>Want to watch?</h3></a>
+                                        
                                         <div className="card-text">
                                             <p>
-                                                
+                                                One of our most diligent students has made the books. Joesph
+                                                Delcastillo has made the news for being the STEM student of the week.
                                             </p>
                                             <div className="text-left">
-                                            <a className="btn btn-outline-dark" href="http://www.ftcroot.com/teams/9944/SATURN"><p>Past Team Scores</p></a>
+                                            <a className="sponsor-name" href="http://www.ftcroot.com/teams/9944/SATURN"><h3>Past Team Scores</h3></a>
                                             </div>
                                         </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-md-6">
-                                    <div className="sponsor-card card">
-                                        <div className="card-body">
-                                        <a className="btn btn-outline-dark" href="https://www.youtube.com/watch?v=TttTeH3yedw"><h1>Want to watch?</h1></a>
                                         </div>
                                     </div>
                                 </div>

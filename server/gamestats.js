@@ -21,13 +21,13 @@ module.exports = (app, validateAuthorization) => {
     // to do and keeps the code small.
 
 
-    
+
     app.post('/api/stats', (req, res) => {
         mongo.addGameStats(req.body, () => {
             res.status(201).send();
         });
-        
-        
+
+
     });
-    
+
 }

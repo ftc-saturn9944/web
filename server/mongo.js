@@ -20,11 +20,17 @@ const Mongo = function () {
 
 Mongo.prototype.getGameStats = function (next) {
     MongoClient.connect(this.url, (err, db) => {
-        if (err) throw err;
+        if (err) {
+            console.log(err.message);
+            return;
+        }
         var dbo = db.db(this.dbName);
         var query = {};
         dbo.collection(GAME_STATS).find(query).toArray(function (err, result) {
-            if (err) throw err;
+            if (err) {
+                console.log(err.message);
+                return;
+            }
             db.close();
             next(result);
         });
@@ -33,11 +39,17 @@ Mongo.prototype.getGameStats = function (next) {
 
 Mongo.prototype.addGameStats = function (data, next) {
     MongoClient.connect(this.url, (err, db) => {
-        if (err) throw err;
+        if (err) {
+            console.log(err.message);
+            return;
+        }
         var dbo = db.db(this.dbName);
         console.log(data);
         dbo.collection(GAME_STATS).insertOne(data, (err, res) => {
-            if (err) throw err;
+            if (err) {
+                console.log(err.message);
+                return;
+            }
             db.close();
             next();
         });
@@ -47,11 +59,18 @@ Mongo.prototype.addGameStats = function (data, next) {
 
 Mongo.prototype.getUser = function (username, password, next) {
     MongoClient.connect(this.url, (err, db) => {
-        if (err) throw err;
+        if (err) {
+            console.log(err.message);
+            return;
+            //do nothing? throwing breaks stuff (i.e server crashes)
+        }
         var dbo = db.db(this.dbName);
         var query = { username, password }
         dbo.collection(USERS).findOne(query, (err, res) => {
-            if (err) throw err;
+            if (err) {
+                console.log(err.message);
+                return;
+            }
             db.close();
             next(res);
         });

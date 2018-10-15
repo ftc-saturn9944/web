@@ -55,6 +55,7 @@ app.post('/api/login', (req, res) => {
     mongo.getUser(username, password, (user) => {
         if (!user) res.status(401).send();
         else {
+            console.log("Callback function called")
             // Make a JSON token
             let auth = {
                 iss: "saturn9944",                          // Token Issuer (us)

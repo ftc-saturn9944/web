@@ -13,13 +13,14 @@ class MediaKit extends Component {
                                 <div className="col-md-7">
                                     <div className="sponsor-card card">
                                         <div className="card-body">
+                                        Media Kit
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                Media Kit
+                
                 </div>
         );
     }

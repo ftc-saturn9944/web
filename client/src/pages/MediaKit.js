@@ -16,13 +16,19 @@ class MediaKit extends Component {
                                         <a className="btn btn-outline-dark" href="https://www.youtube.com/watch?v=TttTeH3yedw"><p>Want to watch?</p></a>
                                         <div className="card-text">
                                             <p>
-                                                One of our most diligent students has made the books. Joesph
-                                                Delcastillo has made the news for being the STEM student of the week.
+                                                
                                             </p>
                                             <div className="text-left">
                                             <a className="btn btn-outline-dark" href="http://www.ftcroot.com/teams/9944/SATURN"><p>Past Team Scores</p></a>
                                             </div>
                                         </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-md-6">
+                                    <div className="sponsor-card card">
+                                        <div className="card-body">
+                                        <a className="btn btn-outline-dark" href="https://www.youtube.com/watch?v=TttTeH3yedw"><h1>Want to watch?</h1></a>
                                         </div>
                                     </div>
                                 </div>

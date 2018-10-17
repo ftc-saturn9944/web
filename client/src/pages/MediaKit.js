@@ -18,7 +18,7 @@ class MediaKit extends Component {
                                                 Here is one of our best matches from a previous year.
                                             </p>
                                             <div className="text-left">
-                                        <a className="btn btn-outline-dark" href="https://www.youtube.com/watch?v=TttTeH3yedw"><h3>Want to watch?</h3></a>
+                                        <a className="btn btn-outline-dark" href="https://www.youtube.com/watch?v=TttTeH3yedw"><h2>Want to watch?</h2></a>
                                         
                                         <div className="card-text">
                                             <p>
@@ -26,7 +26,7 @@ class MediaKit extends Component {
                                                 You can click the button.
                                             </p>
                                             <div className="text-left">
-                                            <a className="btn btn-outline-dark" href="http://www.ftcroot.com/teams/9944/SATURN"><h3>Past Team Scores</h3></a>
+                                            <a className="btn btn-outline-dark" href="http://www.ftcroot.com/teams/9944/SATURN"><h2>Past Team Scores</h2></a>
                                             </div>
                                         </div>
                                         </div>

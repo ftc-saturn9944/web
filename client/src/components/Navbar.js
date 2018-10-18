@@ -34,7 +34,7 @@ class Navbar extends Component {
 
     render() {
         const loggedIn = localStorage.getItem("authKey") !== null;
-        const currentuser = localStorage.getItem("userName");
+        const currentuser = localStorage.getItem("firstName");
         console.log("Logged in:", loggedIn);
         return (
             <nav className="navbar navbar-expand-md navbar-dark bg-dark">
@@ -67,7 +67,7 @@ class Navbar extends Component {
                             <a className="nav-link" href="javascript:void;" onClick={this.logout.bind(this)}>Log Off</a>
                         </li>
                         <li className={"nav-item order-md-0" + (loggedIn ? "" : " invisible")} id="logged-in-as">
-                            <span className="navbar-text"><em>Logged in as user <strong>{currentuser}</strong>.</em></span>
+                            <span className="navbar-text"><em>Logged in as <strong>{currentuser}</strong>.</em></span>
                         </li>
                         <li className={"nav-item dropdown" + (loggedIn ? "" : " invisible")} id="secure-pages">
                             <a class="nav-link dropdown-toggle" href="javascript:void;" role="button" data-toggle="dropdown">

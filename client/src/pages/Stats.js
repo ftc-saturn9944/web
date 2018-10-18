@@ -21,18 +21,41 @@ class Stats extends Component {
             else throw new Error('Fool');
         }).then(json => {
             this.setState({data: json});
+            
         }).catch(err => {
             this.setState({data: err});
         })
     }
 
+    addRows() {
+        for(var datum in this.state.data) {
+            document.getElementById("status").innerHTML = "asdasdasd";
+            document.getElementById("stats-table").appendChild(<tr><th>{this.state.data.keys(datum)[0]}</th><td>{datum}</td></tr>)
+        }
+    }
+
+
     render() {
+        const rows = [];
+        for (var element in this.state.data){
+                rows.push(<tr><th><em>{element}</em></th><td>{this.state.data[element]}</td></tr>)
+        }
         return (
             <div className="App">
                 <Navbar page="stats" />
-                <pre>
-                    {JSON.stringify(this.state.data, null, 2)}
-                </pre>
+               
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Stat</th>
+                            <th scope="col">Value</th>
+                        </tr>
+                    </thead>
+                    <tbody id="stats-table">
+                        {rows}
+                    </tbody>
+
+                </table>
             </div>
         );
     }

@@ -5,7 +5,7 @@ class Registration extends Component {
     render() {
         return (
                 <div className="App">
-                <Navbar page="registration" />'
+                    <Navbar page="registration" />
                 </div>
         );
     }

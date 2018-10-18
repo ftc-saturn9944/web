@@ -7,6 +7,7 @@ import Sponsors from './pages/Sponsors';
 import PointCounter from './pages/PointCounter';
 import Login from './pages/Login';
 import Stats from './pages/Stats';
+import Registration from './pages/Registration';
 
 import {
   Route, Switch
@@ -23,7 +24,7 @@ class Routes extends Component {
           <Route exact path='/pointcounter' component={PointCounter} />
           <Route exact path='/secure/stats' component={Stats} />
           <Route exact path='/login' component={Login} />
-          <Route exact path='/registration' componenet={Registration} />
+          <Route exact path='/registration' component={Registration} />
           <Route path="*" component={TeamInfo} />
         </Switch>
       </div>

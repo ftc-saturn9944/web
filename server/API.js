@@ -34,24 +34,24 @@ app.post('/api/login', (req, res) => {
 
     const username = req.body.username;
     const password = req.body.password;
-    // if (username == "test" && password == "test") { //Hardcoded password to use when we don't have a database when testing
-    //     // Make a JSON token
-    //     let auth = {
-    //         iss: "saturn9944",                          // Token Issuer (us)
-    //         username: username,                             // User that is using this token
-    //         firstname: "Test",
-    //         lastname: "Test",
-    //         iat: Date.now(),                            // Issued at
-    //         exp: Date.now() + 3 * 24 * 60 * 60 * 1000   // Expires after 3 days
-    //     };
-    //     // By signing the token with our secret signature key, we are sure noone can make their own token.
-    //     // Later, we use the key to verify the signature to make sure the tokens are valid.
-    //     signedToken = jwt.sign(auth, jwtKey);
+    if (username == "test" && password == "test") { //Hardcoded password to use when we don't have a database when testing
+        // Make a JSON token
+        let auth = {
+            iss: "saturn9944",                          // Token Issuer (us)
+            username: username,                             // User that is using this token
+            firstname: "Test",
+            lastname: "Test",
+            iat: Date.now(),                            // Issued at
+            exp: Date.now() + 3 * 24 * 60 * 60 * 1000   // Expires after 3 days
+        };
+        // By signing the token with our secret signature key, we are sure noone can make their own token.
+        // Later, we use the key to verify the signature to make sure the tokens are valid.
+        signedToken = jwt.sign(auth, jwtKey);
 
-    //     // Send the token back to the caller. Then every request they make, they can resend that token back to
-    //     // us through the "Authorization" request header and if valid, we know who the user is.
-    //     res.status(200).send({ token: signedToken });
-    // }
+        // Send the token back to the caller. Then every request they make, they can resend that token back to
+        // us through the "Authorization" request header and if valid, we know who the user is.
+        res.status(200).send({ token: signedToken });
+    }
     mongo.getUser(username, password, (user) => {
         if (!user) res.status(401).send();
         else {

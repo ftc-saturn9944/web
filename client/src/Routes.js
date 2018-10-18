@@ -23,6 +23,7 @@ class Routes extends Component {
           <Route exact path='/pointcounter' component={PointCounter} />
           <Route exact path='/secure/stats' component={Stats} />
           <Route exact path='/login' component={Login} />
+          <Route exact path='/registration' componenet={Registration} />
           <Route path="*" component={TeamInfo} />
         </Switch>
       </div>

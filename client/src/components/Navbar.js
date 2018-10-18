@@ -53,7 +53,7 @@ class Navbar extends Component {
                             <a className="nav-link" href="#/pointcounter">Point Counter</a>
                         </li>
                         <li className="nav-item" id="registration">
-                            <a className="nav-link" href="javascript:void;">Registration</a>
+                            <a className="nav-link" href="#/registration">Registration</a>
                         </li>
                     </ul>
                 </div>
@@ -62,6 +62,11 @@ class Navbar extends Component {
                 </div>
                 <div className="navbar-collapse collapse w-100 order-3 dual-collapse2">
                     <ul className="navbar-nav ml-auto">
+                        <li className={"nav-item dropdown" + (loggedIn ? "" : " invisible")} id="secure-pages">
+                            <a class="dropdown-toggle" href="javascript:void;" role="button" data-toggle="dropdown">
+                                Secure Pages
+                            </a>
+                        </li>
                         <li className={"nav-item order-md-1" + (loggedIn ? "" : " invisible")} id="logoff">
                             <a className="nav-link" href="javascript:void;" onClick={this.logout.bind(this)}>Log Off</a>
                         </li>

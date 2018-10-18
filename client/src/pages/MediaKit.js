@@ -8,7 +8,7 @@ class MediaKit extends Component {
                 <Navbar page="media-kit" />'
                     <div className="container-fluid">
                         <div className="card-holder">
-                        <h2>Look what we have done!</h2>
+                        Look what we have done!
                             <div className="row">
                                 <div className="col-md-6">
                                     <div className="sponsor-card card">
@@ -18,7 +18,7 @@ class MediaKit extends Component {
                                                 Here is one of our best matches from a previous year.
                                             </p>
                                             <div className="text-left">
-                                        <a className="btn btn-outline-dark" href="https://www.youtube.com/watch?v=TttTeH3yedw"><h2>Want to watch?</h2></a>
+                                        <a className="btn btn-outline-dark" href="https://www.youtube.com/watch?v=TttTeH3yedw">Want to watch?</a>
                                         
                                         <div className="card-text">
                                             <p>
@@ -26,7 +26,7 @@ class MediaKit extends Component {
                                                 You can click the button.
                                             </p>
                                             <div className="text-left">
-                                            <a className="btn btn-outline-dark" href="http://www.ftcroot.com/teams/9944/SATURN"><h2>Past Team Scores</h2></a>
+                                            <a className="btn btn-outline-dark" href="http://www.ftcroot.com/teams/9944/SATURN">Past Team Scores</a>
                                             </div>
                                         </div>
                                         </div>

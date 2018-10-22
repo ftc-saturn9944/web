@@ -6,7 +6,7 @@ class Stats extends Component {
         super(props);
 
         this.state = {
-            data: { status: "Loading stuff" }
+            data: { status: "Loading stuff!" }
         };
     }
 

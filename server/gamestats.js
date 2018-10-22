@@ -13,7 +13,12 @@ module.exports = (app, validateAuthorization) => {
         // It also returned the jwt token for convenience in case we want it.
 
         mongo.getGameStats(data => {
-            res.status(200).send(data);
+            if (data.length != 0) {
+                console.log(data.length);
+                res.status(200).send(data);
+            } else {
+                res.status(404).send({ status: "No data found. There is either no database connected to the server, or there is no data in that database." })
+            }
         });
     });
 

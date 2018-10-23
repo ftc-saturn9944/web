@@ -18,8 +18,12 @@ class Registration extends Component {
                         <input className="form-control col-md-6" type="text" placeholder="Enter last name" id="last-name" />
                     </div>
                     <div className="form-group">
-                        <label for="student-email" ><b>Student Email</b></label><br />
-                        <input className="form-control col-md-6" type="text" placeholder="Enter student email" id="student-email" />
+                        <label for="student-phone" ><b>Student Email</b></label><br />
+                        <input className="form-control col-md-6" type="text" placeholder="Enter student email" id="student-phone" />
+                    </div>
+                    <div className="form-group">
+                        <label for="parent-phone" ><b>Parent's Phone Number</b></label><br />
+                        <input className="form-control col-md-6" type="text" placeholder="Enter parent phone number" id="parent-phone" />
                     </div>
                     <div className="form-group">
                         <label for="parent-phone" ><b>Parent's Phone Number</b></label><br />

@@ -4,6 +4,7 @@ const MongoClient = require('mongodb').MongoClient;
 
 const GAME_STATS = "gamestats";
 const USERS = "users";
+const REGISTRATION = "registration";
 
 const Mongo = function () {
     let mongoUrl = process.env.MONGODB_URI;

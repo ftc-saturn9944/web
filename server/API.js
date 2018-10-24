@@ -83,6 +83,10 @@ app.post('/api/login', (req, res) => {
 
 // Load the submodules
 require('./gamestats.js')(app, validateAuthorization);
+app.post("/api/register", (req, res) => {
+    console.log(req.body);
+    res.status(200).send();
+});
 
 // The "catchall" handler: for any request that doesn't
 // match one above, send back React's index.html file.

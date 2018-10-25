@@ -23,7 +23,7 @@ class Stats extends Component {
                 throw new Error('Fool');
             }
         }).then(json => {
-            this.setState({ data: json });
+            this.setState({ data: json[0] });
 
         }).catch(err => {
             this.setState({ data: err });

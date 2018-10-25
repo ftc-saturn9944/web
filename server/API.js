@@ -91,7 +91,6 @@ app.post("/api/register", (req, res) => {
     entry.timestampHumanReadable = new Date().toString();
     let err = mongo.addRegistrationInfo(entry, () => {
         res.status(200).send(); //Success callback
-        return;
     }, (err) => { //Failed callback
         if (err.message == "Duplicate") //Not the best way to do this im sure
             res.status(400).send("duplicate"); //But i needed a way to differentiate between errors

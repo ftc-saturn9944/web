@@ -27,7 +27,7 @@ Mongo.prototype.getGameStats = function (next) {
         }
         var dbo = db.db(this.dbName);
         var query = {};
-        dbo.collection(GAME_STATS).find(query).toArray(function (err, result) {
+        dbo.collection(GAME_STATS).find(query).project({ _id: 0 }).toArray(function (err, result) {
             if (err) {
                 console.log(err.message);
                 return;

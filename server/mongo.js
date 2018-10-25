@@ -78,6 +78,46 @@ Mongo.prototype.getUser = function (username, password, next) {
     })
 };
 
+Mongo.prototype.addRegistrationInfo = function (data, next, fail) {
+    if (!(data.firstName && data.lastName && (data.studentPhone || data.studentEmail || data.parentPhone || data.parentEmail))) { //User must provide at least 1 contact, as well as name
+        fail(new Error("Not Enough Info")); //User hasnt provided enough information error
+        return;
+    }
+    MongoClient.connect(this.url, (err, db) => {
+        if (err) {
+            fail(err); //Connection Error
+            return;
+        }
+        var dbo = db.db(this.dbName);
+        dbo.collection(REGISTRATION).find({ firstName: data.firstName, lastName: data.lastName }).count((err, count) => { //Check if there are any entries with the same name
+
+            if (err) {
+                db.close();
+                fail(err); //find or count error
+                return;
+            }
+            if (count == 0) { //If there is no previous entry
+
+                dbo.collection(REGISTRATION).insertOne(data, (err, res) => { //Insert the data into the db
+                    if (err) {
+                        db.close();
+                        fail(err); //Insert error
+                        return;
+                    } else {
+                        db.close();
+                        next(); //SUCCESS!
+                    }
+                });
+            } else {
+                db.close();
+                fail(new Error("Duplicate")); //Duplicate error
+                return;
+            }
+        });
+    }
+    );
+};
+
 module.exports = () => {
     return new Mongo();
 };

@@ -84,6 +84,26 @@ app.post('/api/login', (req, res) => {
 // Load the submodules
 require('./gamestats.js')(app, validateAuthorization);
 
+//Registration info endpoint - takes in student & parent contact information and stores it in a database
+app.post("/api/register", (req, res) => {
+    let entry = req.body;
+    entry.timestamp = Date.now();
+    entry.timestampHumanReadable = new Date().toString();
+    let err = mongo.addRegistrationInfo(entry, () => {
+        res.status(200).send(); //Success callback
+        return;
+    }, (err) => { //Failed callback
+        if (err.message == "Duplicate") //Not the best way to do this im sure
+            res.status(400).send("duplicate"); //But i needed a way to differentiate between errors
+        else if (err.message == "Not Enough Info")
+            res.status(400).send("notenoughinfo");
+        else
+            res.status(500).send();
+        console.log(err.message);
+    });
+
+});
+
 // The "catchall" handler: for any request that doesn't
 // match one above, send back React's index.html file.
 app.get('*', (req, res) => {

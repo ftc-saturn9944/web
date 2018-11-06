@@ -26,7 +26,6 @@ class PointCounter extends Component {
     }
 
     calculatePoints() {
-        console.log(this.state.cargoMinerals);
         var depotPoints;
         var cargoPoints;
         if (!this.state.depotMinerals) depotPoints = 0;
@@ -37,7 +36,6 @@ class PointCounter extends Component {
         var scoreAccumulator = 0;
         scoreAccumulator += depotPoints;
         scoreAccumulator += cargoPoints;
-        console.log(this.state.autoLanded);
         if (this.state.autoLanded) scoreAccumulator += 30;
         if (this.state.autoSampled) scoreAccumulator += 25;
         if (this.state.autoClaimed) scoreAccumulator += 15;

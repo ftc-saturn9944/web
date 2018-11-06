@@ -35,7 +35,6 @@ class Navbar extends Component {
     render() {
         const loggedIn = localStorage.getItem("authKey") !== null;
         const currentuser = localStorage.getItem("firstName");
-        console.log("Logged in:", loggedIn);
         return (
             <nav className="navbar navbar-expand-md navbar-dark bg-dark">
                 <div className="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
@@ -62,7 +61,7 @@ class Navbar extends Component {
                 </div>
                 <div className="navbar-collapse collapse w-100 order-3 dual-collapse2">
                     <ul className="navbar-nav ml-auto">
-                        
+
                         <li className={"nav-item order-md-1" + (loggedIn ? "" : " invisible")} id="logoff">
                             <a className="nav-link" href="javascript:void;" onClick={this.logout.bind(this)}>Log Off</a>
                         </li>
@@ -70,11 +69,11 @@ class Navbar extends Component {
                             <span className="navbar-text"><em>Logged in as <strong>{currentuser}</strong>.</em></span>
                         </li>
                         <li className={"nav-item dropdown" + (loggedIn ? "" : " invisible")} id="secure-pages">
-                            <a class="nav-link dropdown-toggle" href="javascript:void;" role="button" data-toggle="dropdown">
+                            <a className="nav-link dropdown-toggle" href="javascript:void;" role="button" data-toggle="dropdown">
                                 Secure Pages
                             </a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#/secure/stats">
+                            <div className="dropdown-menu">
+                                <a className="dropdown-item" href="#/secure/stats">
                                     Game Stats
                                 </a>
                             </div>

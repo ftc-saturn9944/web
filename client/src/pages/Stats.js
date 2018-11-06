@@ -50,7 +50,7 @@ class Stats extends Component {
                 <div className="container-fluid">
 
 
-                    <table class="table">
+                    <table className="table">
                         <thead>
                             <tr>
                                 <th scope="col">Stat</th>

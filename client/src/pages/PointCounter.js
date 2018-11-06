@@ -26,8 +26,14 @@ class PointCounter extends Component {
     }
 
     calculatePoints() {
-        var depotPoints = parseInt(this.state.depotMinerals) * 2;
-        var cargoPoints = parseInt(this.state.cargoMinerals) * 5;
+        console.log(this.state.cargoMinerals);
+        var depotPoints;
+        var cargoPoints;
+        if (!this.state.depotMinerals) depotPoints = 0;
+        else depotPoints = parseInt(this.state.depotMinerals) * 2;
+        if (!this.state.cargoMinerals) cargoPoints = 0;
+        else cargoPoints = parseInt(this.state.cargoMinerals) * 5;
+
         var scoreAccumulator = 0;
         scoreAccumulator += depotPoints;
         scoreAccumulator += cargoPoints;
@@ -83,7 +89,6 @@ class PointCounter extends Component {
             score: 0
         });
     }
-
     render() {
         return (
             <div className="App">
@@ -138,56 +143,75 @@ class PointCounter extends Component {
                                         Also, these fields take up too much horizontal space.*/}
                                             <div className="form-group">
                                                 <label htmlFor="cargoMinerals">Number of minerals scored in Cargo Hold</label>
-                                                <input type="number" className="form-control" name="cargoMinerals" value={this.state.cargoMinerals} onChange={e => this.change(e)} min="0" />
+                                                <br></br>
+                                                <div className="input-group input-group-lg">
+                                                    <div className="input-group-prepend">
+                                                        <button className="btn" type="button" onClick={() => { if (this.state.cargoMinerals >= 1) this.setState({ cargoMinerals: this.state.cargoMinerals - 1 }) }}>-</button>
+                                                    </div>
+                                                    <input type="number" className="form-control" name="cargoMinerals" value={this.state.cargoMinerals} onChange={e => this.change(e)} min="0" />
+                                                    <div className="input-group-append">
+                                                        <button className="btn" type="button" onClick={() => { this.setState({ cargoMinerals: this.state.cargoMinerals + 1 }) }}>+</button>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div className="form-group">
                                                 <label htmlFor="depotMinerals">Number of minerals scored in Depot</label>
-                                                <input type="number" className="form-control" name="depotMinerals" value={this.state.depotMinerals} onChange={e => this.change(e)} min="0" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-md-4 mb-4">
-                                    <div className="card h-100">
-                                        <div className="card-header">
-                                            <legend>End-Game Period</legend>
-                                        </div>
-                                        <div className="card-body">
-                                            <div className="custom-control custom-radio custom-control-inline form-control-lg">
-                                                <input className="custom-control-input" type="radio" name="endGamePosition" id="endGameNone" value="none" onChange={e => this.change(e)} />
-                                                <label className="custom-control-label" htmlFor="endGameNone">
-                                                    None
-                                                </label>
-                                            </div>
-                                            <div className="custom-control custom-radio custom-control-inline form-control-lg">
-                                                <input className="custom-control-input" type="radio" name="endGamePosition" id="endGameRelatch" value="relatch" onChange={e => this.change(e)} />
-                                                <label className="custom-control-label" htmlFor="endGameRelatch">
-                                                    Re-Latched
-                                                </label>
-                                            </div>
-                                            <div className="custom-control custom-radio custom-control-inline form-control-lg">
-                                                <input className="custom-control-input" type="radio" name="endGamePosition" id="endGamePartialPark" value="partial" onChange={e => this.change(e)} />
-                                                <label className="custom-control-label" htmlFor="endGamePartialPark">
-                                                    Partial Crater Park
-                                                </label>
-                                            </div>
-                                            <div className="custom-control custom-radio custom-control-inline form-control-lg">
-                                                <input className="custom-control-input" type="radio" name="endGamePosition" id="endGameCompletePark" value="complete" onChange={e => this.change(e)} />
-                                                <label className="custom-control-label" htmlFor="endGameCompletePark">
-                                                    Complete Crater Park
-                                                </label>
+                                                <div className="input-group input-group-lg">
+                                                    <div className="input-group-prepend">
+                                                        <button className="btn" type="button" onClick={() => { if (this.state.depotMinerals >= 1) this.setState({ depotMinerals: this.state.depotMinerals - 1 }) }}>-</button>
+                                                    </div>
+                                                    <input type="number" className="form-control" name="depotMinerals" value={this.state.depotMinerals} onChange={e => this.change(e)} min="0" />
+                                                    <div className="input-group-append">
+                                                        <button className="btn" type="button" onClick={() => { this.setState({ depotMinerals: this.state.depotMinerals + 1 }) }}><strong>+</strong></button>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
+                            <div className="col-md-4 mb-4">
+                                <div className="card h-100">
+                                    <div className="card-header">
+                                        <legend>End-Game Period</legend>
+                                    </div>
+                                    <div className="card-body">
+                                        <div className="custom-control custom-radio custom-control-inline form-control-lg">
+                                            <input className="custom-control-input" type="radio" name="endGamePosition" id="endGameNone" value="none" onChange={e => this.change(e)} />
+                                            <label className="custom-control-label" htmlFor="endGameNone">
+                                                None
+                                                </label>
+                                        </div>
+                                        <div className="custom-control custom-radio custom-control-inline form-control-lg">
+                                            <input className="custom-control-input" type="radio" name="endGamePosition" id="endGameRelatch" value="relatch" onChange={e => this.change(e)} />
+                                            <label className="custom-control-label" htmlFor="endGameRelatch">
+                                                Re-Latched
+                                                </label>
+                                        </div>
+                                        <div className="custom-control custom-radio custom-control-inline form-control-lg">
+                                            <input className="custom-control-input" type="radio" name="endGamePosition" id="endGamePartialPark" value="partial" onChange={e => this.change(e)} />
+                                            <label className="custom-control-label" htmlFor="endGamePartialPark">
+                                                Partial Crater Park
+                                                </label>
+                                        </div>
+                                        <div className="custom-control custom-radio custom-control-inline form-control-lg">
+                                            <input className="custom-control-input" type="radio" name="endGamePosition" id="endGameCompletePark" value="complete" onChange={e => this.change(e)} />
+                                            <label className="custom-control-label" htmlFor="endGameCompletePark">
+                                                Complete Crater Park
+                                                </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                             <button type="button" className="btn btn-primary mr-1" onClick={this.calculatePoints.bind(this)}>Tally score</button>
                             <button type="button" className="btn btn-dark mr-1" onClick={this.reset.bind(this)}>Reset</button>
                         </form>
                         <h1>Score: {this.state.score}</h1>
                     </div>
-                </div>
-            </div>
+                </div >
+            </div >
         );
     }
 }

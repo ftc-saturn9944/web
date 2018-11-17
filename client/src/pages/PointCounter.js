@@ -139,7 +139,7 @@ class PointCounter extends Component {
                                         </div>
                                         <div className="card-body">
                                             <div className="row">
-                                                <div className="col-md-6 sb-1">
+                                                <div className="col-6 mb-1">
                                                     <div className="custom-control custom-control-checkbox custom-control-inline form-control-lg">
                                                         <input className="custom-control-input" type="checkbox" value={this.state.autoLanded} onChange={e => this.changeCheckbox(e)} name="autoLanded" id="autoLanded" />
                                                         <label className="custom-control-label" htmlFor="autoLanded">
@@ -147,7 +147,7 @@ class PointCounter extends Component {
                                             </label>
                                                     </div>
                                                 </div>
-                                                <div className="col-md-6 sb-1">
+                                                <div className="col-6 mb-1">
                                                     <div className="custom-control custom-control-checkbox custom-control-inline form-control-lg">
                                                         <input className="custom-control-input" type="checkbox" value={this.state.autoLanded2} onChange={e => this.changeCheckbox(e)} name="autoLanded2" id="autoLanded2" />
                                                         <label className="custom-control-label" htmlFor="autoLanded2">
@@ -157,7 +157,7 @@ class PointCounter extends Component {
                                                 </div>
                                             </div>
                                             <div className="row">
-                                                <div className="col-md-6 sb-1">
+                                                <div className="col-6 mb-1">
                                                     <div className="custom-control custom-control-checkbox custom-control-inline form-control-lg">
                                                         <input className="custom-control-input" type="checkbox" value={this.state.autoSampled} onChange={e => this.changeCheckbox(e)} name="autoSampled" id="autoSampled" />
                                                         <label className="custom-control-label" htmlFor="autoSampled">
@@ -165,7 +165,7 @@ class PointCounter extends Component {
                                                 </label>
                                                     </div>
                                                 </div>
-                                                <div className="col-md-6 sb-1">
+                                                <div className="col-6 mb-1">
                                                     <div className="custom-control custom-control-checkbox custom-control-inline form-control-lg">
                                                         <input className="custom-control-input" type="checkbox" value={this.state.autoSampled2} onChange={e => this.changeCheckbox(e)} name="autoSampled2" id="autoSampled2" />
                                                         <label className="custom-control-label" htmlFor="autoSampled2">
@@ -175,7 +175,7 @@ class PointCounter extends Component {
                                                 </div>
                                             </div>
                                             <div className="row">
-                                                <div className="col-md-6 sb-1">
+                                                <div className="col-6 mb-1">
                                                     <div className="custom-control custom-control-checkbox custom-control-inline form-control-lg">
                                                         <input className="custom-control-input" type="checkbox" value={this.state.autoClaimed} onChange={e => this.changeCheckbox(e)} name="autoClaimed" id="autoClaimed" />
                                                         <label className="custom-control-label" htmlFor="autoClaimed">
@@ -183,7 +183,7 @@ class PointCounter extends Component {
                                                 </label>
                                                     </div>
                                                 </div>
-                                                <div className="col-md-6 sb-1">
+                                                <div className="col-6 mb-1">
                                                     <div className="custom-control custom-control-checkbox custom-control-inline form-control-lg">
                                                         <input className="custom-control-input" type="checkbox" value={this.state.autoClaimed2} onChange={e => this.changeCheckbox(e)} name="autoClaimed2" id="autoClaimed2" />
                                                         <label className="custom-control-label" htmlFor="autoClaimed2">
@@ -193,7 +193,7 @@ class PointCounter extends Component {
                                                 </div>
                                             </div>
                                             <div className="row">
-                                                <div className="col-md-6 sb-1">
+                                                <div className="col-6 mb-1">
                                                     <div className="custom-control custom-control-checkbox custom-control-inline form-control-lg">
                                                         <input className="custom-control-input" type="checkbox" value={this.state.autoParked} onChange={e => this.changeCheckbox(e)} name="autoParked" id="autoParked" />
                                                         <label className="custom-control-label" htmlFor="autoParked">
@@ -201,7 +201,7 @@ class PointCounter extends Component {
                                                 </label>
                                                     </div>
                                                 </div>
-                                                <div className="col-md-6 sb-1">
+                                                <div className="col-6 mb-1">
                                                     <div className="custom-control custom-control-checkbox custom-control-inline form-control-lg">
                                                         <input className="custom-control-input" type="checkbox" value={this.state.autoParked2} onChange={e => this.changeCheckbox(e)} name="autoParked2" id="autoParked2" />
                                                         <label className="custom-control-label" htmlFor="autoParked2">
@@ -258,8 +258,8 @@ class PointCounter extends Component {
                                         <legend>End-Game Period</legend>
                                     </div>
                                     <div className="card-body">
-                                        <div className="row">
-                                            <div className="col-md-6 mb-1">
+                                        <div className="row pb-4">
+                                            <div className="col-6">
                                                 <div className="custom-control custom-radio custom-control-inline form-control-lg">
                                                     <input className="custom-control-input" type="radio" name="endGamePosition" id="endGameNone" value="none" onChange={e => this.change(e)} />
                                                     <label className="custom-control-label" htmlFor="endGameNone">
@@ -267,7 +267,7 @@ class PointCounter extends Component {
                                                 </label>
                                                 </div>
                                             </div>
-                                            <div className="col-md-6 mb-1">
+                                            <div className="col-6">
                                                 <div className="custom-control custom-radio custom-control-inline form-control-lg">
                                                     <input className="custom-control-input" type="radio" name="endGamePosition2" id="endGameNone2" value="none" onChange={e => this.change(e)} />
                                                     <label className="custom-control-label" htmlFor="endGameNone2">
@@ -276,8 +276,8 @@ class PointCounter extends Component {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="row">
-                                            <div className="col-md-6 mb-2">
+                                        <div className="row pb-4">
+                                            <div className="col-6">
                                                 <div className="custom-control custom-radio custom-control-inline form-control-lg">
                                                     <input className="custom-control-input" type="radio" name="endGamePosition" id="endGameRelatch" value="relatch" onChange={e => this.change(e)} />
                                                     <label className="custom-control-label" htmlFor="endGameRelatch">
@@ -285,7 +285,7 @@ class PointCounter extends Component {
                                                 </label>
                                                 </div>
                                             </div>
-                                            <div className="col-md-6 mb-2">
+                                            <div className="col-6">
                                                 <div className="custom-control custom-radio custom-control-inline form-control-lg">
                                                     <input className="custom-control-input" type="radio" name="endGamePosition2" id="endGameRelatch2" value="relatch" onChange={e => this.change(e)} />
                                                     <label className="custom-control-label" htmlFor="endGameRelatch2">
@@ -294,8 +294,8 @@ class PointCounter extends Component {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="row">
-                                            <div className="col-md-6 mb-2">
+                                        <div className="row pb-4">
+                                            <div className="col-6">
                                                 <div className="custom-control custom-radio custom-control-inline form-control-lg">
                                                     <input className="custom-control-input" type="radio" name="endGamePosition" id="endGamePartialPark" value="partial" onChange={e => this.change(e)} />
                                                     <label className="custom-control-label" htmlFor="endGamePartialPark">
@@ -303,7 +303,7 @@ class PointCounter extends Component {
                                                 </label>
                                                 </div>
                                             </div>
-                                            <div className="col-md-6 mb-2">
+                                            <div className="col-6">
                                                 <div className="custom-control custom-radio custom-control-inline form-control-lg">
                                                     <input className="custom-control-input" type="radio" name="endGamePosition2" id="endGamePartialPark2" value="partial" onChange={e => this.change(e)} />
                                                     <label className="custom-control-label" htmlFor="endGamePartialPark2">
@@ -312,8 +312,8 @@ class PointCounter extends Component {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="row">
-                                            <div className="col-md-6 mb-1">
+                                        <div className="row pb-4">
+                                            <div className="col-6">
                                                 <div className="custom-control custom-radio custom-control-inline form-control-lg">
                                                     <input className="custom-control-input" type="radio" name="endGamePosition" id="endGameCompletePark" value="complete" onChange={e => this.change(e)} />
                                                     <label className="custom-control-label" htmlFor="endGameCompletePark">
@@ -321,7 +321,7 @@ class PointCounter extends Component {
                                                 </label>
                                                 </div>
                                             </div>
-                                            <div className="col-md-6 mb-1">
+                                            <div className="col-6">
                                                 <div className="custom-control custom-radio custom-control-inline form-control-lg">
                                                     <input className="custom-control-input" type="radio" name="endGamePosition2" id="endGameCompletePark2" value="complete" onChange={e => this.change(e)} />
                                                     <label className="custom-control-label" htmlFor="endGameCompletePark2">

@@ -222,13 +222,13 @@ class PointCounter extends Component {
                     <div className="card-holder">
                         <h1>Rover Ruckus Points Counter</h1>
                         <div className="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Number of Teams
                                 </button>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="javascript:void" onClick={this.changeDisplayMode.bind(this, 1)}>1 Team</a>
-                                <a class="dropdown-item" href="javscript:void" onClick={this.changeDisplayMode.bind(this, 2)}>2 Teams (One Alliance)</a>
-                                <a class="dropdown-item" href="javascript:void" onClick={this.changeDisplayMode.bind(this, 4)}>4 Teams (Both Alliances)</a>
+                            <div className="dropdown-menu">
+                                <a className="dropdown-item" href="javascript:void" onClick={this.changeDisplayMode.bind(this, 1)}>1 Team</a>
+                                <a className="dropdown-item" href="javscript:void" onClick={this.changeDisplayMode.bind(this, 2)}>2 Teams (One Alliance)</a>
+                                <a className="dropdown-item" href="javascript:void" onClick={this.changeDisplayMode.bind(this, 4)}>4 Teams (Both Alliances)</a>
                             </div>
                         </div>
                         <br />

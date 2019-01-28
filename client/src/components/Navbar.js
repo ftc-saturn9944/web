@@ -76,6 +76,9 @@ class Navbar extends Component {
                                 <a className="dropdown-item" href="#/secure/stats">
                                     Game Stats
                                 </a>
+                                <a className="dropdown-item" href="#/secure/scouting">
+                                    Scouting
+                                </a>
                             </div>
                         </li>
                         <li className={"nav-item" + (loggedIn ? " invisible" : "")} id="login">

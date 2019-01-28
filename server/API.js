@@ -83,6 +83,7 @@ app.post('/api/login', (req, res) => {
 
 // Load the submodules
 require('./gamestats.js')(app, validateAuthorization);
+require('./scouting.js')(app, validateAuthorization);
 
 //Registration info endpoint - takes in student & parent contact information and stores it in a database
 app.post("/api/register", (req, res) => {

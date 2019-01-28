@@ -5,6 +5,7 @@ const MongoClient = require('mongodb').MongoClient;
 const GAME_STATS = "gamestats";
 const USERS = "users";
 const REGISTRATION = "registration";
+const SCOUTING = "scouting";
 
 const Mongo = function () {
     let mongoUrl = process.env.MONGODB_URI;
@@ -18,6 +19,27 @@ const Mongo = function () {
         this.dbName = decode[2];
     }
 };
+
+Mongo.prototype.getScoutingData = function (match, next) {
+    MongoClient.connect(this.url, (err, db) => {
+        if (err) {
+            console.log("HECK");
+            console.log(err.message);
+            return;
+        }
+        var dbo = db.db(this.dbName);
+        var query = match ? match : {}; //If the match field was provided, use that to find matches.
+        console.log("QUERY IS: " + query);
+        dbo.collection(SCOUTING).find(query).project({ _id: 0 }).toArray(function (err, result) {
+            if (err) {
+                console.log(err.message);
+                return;
+            }
+            db.close();
+            next(result);
+        });
+    });
+}
 
 Mongo.prototype.getGameStats = function (next) {
     MongoClient.connect(this.url, (err, db) => {

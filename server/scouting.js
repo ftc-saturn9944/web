@@ -8,12 +8,11 @@ module.exports = (app, validateAuthorization) => {
             res.status(403).send();
             return;
         }
-        console.log("heck");
 
         // If we make it this far, we know the user is authenticated so it's safe to proceed.
         // It also returned the jwt token for convenience in case we want it.
-        let match = typeof req.body.match != undefined ? req.body.match : false;
-        mongo.getScoutingData({ teamName: "Swampbots" }, data => {
+        let match = typeof req.body.match != undefined ? req.body.match : false; //If the website does not give us a query string then don't use one. (pass false to getScoutingData)
+        mongo.getScoutingData(match, data => {
             console.log(data);
             if (data.length != 0) {
                 console.log(data.length);

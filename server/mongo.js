@@ -23,13 +23,12 @@ const Mongo = function () {
 Mongo.prototype.getScoutingData = function (match, next) {
     MongoClient.connect(this.url, (err, db) => {
         if (err) {
-            console.log("HECK");
             console.log(err.message);
             return;
         }
         var dbo = db.db(this.dbName);
         var query = match ? match : {}; //If the match field was provided, use that to find matches.
-        console.log("QUERY IS: " + query);
+        console.log("QUERY IS: " + JSON.stringify(query));
         dbo.collection(SCOUTING).find(query).project({ _id: 0 }).toArray(function (err, result) {
             if (err) {
                 console.log(err.message);

@@ -1,4 +1,7 @@
+$primary: #fd6502;
+
 @import '~bootstrap/scss/bootstrap';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
 
 body, html {
     //height: 100%;
@@ -7,6 +10,9 @@ body, html {
     margin: 0px;
     background-color: black;
     color:whitesmoke;
+}
+.container .container-fluid {
+    padding-top: 30px;
 }
 
 #carouselComponent {
@@ -38,11 +44,11 @@ address {
 }
 
 a {
-    color: #048;    
+    color: rgb(177, 80, 0);    
 }
 
 a:hover {
-    color: #08c;
+    color: rgb(255, 115, 0);
 }
 
 .sponsor-card {
@@ -58,7 +64,7 @@ li.nav-item.invisible {
     padding: 0px;
     margin: 0px;
 }
-#logged-in-as .navbar-text {
+/*#logged-in-as .navbar-text {
     color: #7e7e7e;
     font-weight: 400;
-}
+}*/

@@ -60,7 +60,7 @@ class Navbar extends Component {
                 <div className="mx-auto order-0 order-md-1">
                     <img src="/images/saturn-logo.png" alt="Logo" />
                 </div>
-                <div className="navbar-collapse collapse w-100 order-3 dual-collapse2">
+               <div className="navbar-collapse collapse w-100 order-3 dual-collapse2">
                     <ul className="navbar-nav ml-auto">
                         {loggedIn &&
                         <li className="nav-item order-md-1" id="logoff">

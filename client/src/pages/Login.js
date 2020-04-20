@@ -27,7 +27,7 @@ class Login extends Component {
 
 
                     if (document.getElementById("redirect").checked) //If the redirect box is checked, redirect them to the main page.
-                        window.location = "#/";
+                        window.location = "/";
                     document.location.reload(); //Otherwise reload so we can see our token
                 }
                 else {

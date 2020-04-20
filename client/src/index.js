@@ -8,9 +8,9 @@ import 'bootstrap';
 import './scss/saturn.scss';
 
 import {
-    HashRouter,
+    BrowserRouter,
 } from 'react-router-dom';
 
-ReactDOM.render(<HashRouter><Routes /></HashRouter>, document.getElementById('root'));
+ReactDOM.render(<BrowserRouter forceRefresh={false} basename={'/'}><Routes /></BrowserRouter>, document.getElementById('root'));
 
 registerServiceWorker();

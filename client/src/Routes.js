@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router';
 
-import TeamInfo from './pages/TeamInfo';
+import Home from './pages/Home';
+import Page404 from './pages/404';
 import MediaKit from './pages/MediaKit';
 import Sponsors from './pages/Sponsors';
 import PointCounter from './pages/PointCounter';
@@ -19,7 +20,7 @@ class Routes extends Component {
     return (
       <div>
         <Switch>
-          <Route exact path='/' component={TeamInfo} />
+          <Route exact path='/' component={Home} />
           <Route exact path='/media' component={MediaKit} />
           <Route exact path='/sponsors' component={Sponsors} />
           <Route exact path='/pointcounter' component={PointCounter} />
@@ -27,7 +28,7 @@ class Routes extends Component {
           <Route exact path='/secure/scouting' component={Scouting} />
           <Route exact path='/login' component={Login} />
           <Route exact path='/registration' component={Registration} />
-          <Route path="*" component={TeamInfo} />
+          <Route path="*" component={Page404}/>
         </Switch>
       </div>
     );
@@ -35,3 +36,6 @@ class Routes extends Component {
 }
 
 export default withRouter(Routes);
+
+
+

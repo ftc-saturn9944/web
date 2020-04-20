@@ -1,12 +1,22 @@
 @import '~bootstrap/scss/bootstrap';
 
+body, html {
+    //height: 100%;
+    //width: 100%;
+    //overflow-x: hidden;
+    margin: 0px;
+    background-color: black;
+    color:whitesmoke;
+}
+
 #carouselComponent {
     background: black;
 }
 
 .navbar {
+    background: rgba(0, 0, 0, 0.5) !important;
     z-index: 100;
-    box-shadow: 0px 2px 10px rgb(255, 136, 0);
+    //box-shadow: 0px 2px 10px rgb(255, 136, 0);
 }
 
 .card-holder {

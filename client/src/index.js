@@ -4,7 +4,7 @@ import './index.css';
 import Routes from './Routes';
 import registerServiceWorker from './registerServiceWorker';
 
-import 'bootstrap';
+import 'bootstrap/dist/js/bootstrap';
 import './scss/saturn.scss';
 
 import {

@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer'
 import {Link, animateScroll} from "react-scroll";
 import '../scss/Home.scss';
 class Home extends Component {
-
-    render() {
-        
+    constructor(props) {
+        super(props);
         const images = [
             'RoR-Scorpion.jpg',
             'SS-AtMHS.jpg',
@@ -15,27 +15,65 @@ class Home extends Component {
             'SS-Stacking.jpg',
             'SS-States-AllianceSelection.jpg',
             'SS-StoneGrabbed.jpg'
-        ];
+        ]
+        this.state = {
+            images: images,
+            currentImage: Math.floor(Math.random()*images.length)
+        }
+    }
+
+    fadeImage(e) {
+        void e.offSetWidth;
+        e.classList.add('fadeout');
+        void e.offSetWidth;
+        setTimeout(() => {
+            this.state.currentImage = this.state.currentImage < this.state.images.length - 1 ? this.state.currentImage+1 : 0;
+            e.style.backgroundImage = `url(\"/images/home-background/${this.state.images[this.state.currentImage]}\")`;
+            void e.offSetWidth;
+            e.classList.remove('fadeout');
+            void e.offSetWidth;
+            e.classList.add('fadein');
+            setTimeout(() => {
+                void e.offSetWidth;
+                e.classList.remove('fadein');
+                void e.offSetWidth; //Dummy expression to retrigger animation
+            }, 2000);
+        }, 2000);
+    }
+    componentDidMount() {
+        setTimeout((() => {
+            this.fadeImage(document.querySelector(".homeimage"));
+            setInterval(this.fadeImage.bind(this, document.querySelector(".homeimage")), 10000);
+        }).bind(this), 6000);
+
+        this.state.images.forEach((picture) => { //preload images so they don't take time to load after fade-in starts
+            const img = new Image();
+            img.src = `/images/home-background/${picture}`;
+        });
+    }
+
+    render() {
+        
+       
 
         
 
         return (
             <div className="App">
                 <Navbar page="team-info" />
-                {console.log("/images/home-background/" + images[Math.floor(Math.random()*images.length)])}
                 <div className="container-fluid p-0">
                         <div className="row landing p-0 m-0">
-                            <div className="homeimage"  style={{"backgroundImage": `url(\"/images/home-background/${images[Math.floor(Math.random()*images.length)]}\") `}}></div>
+                            <div className="homeimage"  style={{"backgroundImage": `url(\"/images/home-background/${this.state.images[this.state.currentImage]}\") `}}></div>
                             <div className="gradient"></div>
                             <div className="col-md-8 mx-auto my-auto">
                                 <img src="/images/SATURN-Logo-Dark-Transparent.png" className="d-block img-fluid biglogo"></img>
                                 <center>
-                                    <Link to="join-section" smooth={true} duration={400}>
+                                    <Link to="join-section" smooth={true} duration={800}>
                                         <button class="p-2 m-2 btn btn-lg btn-outline-primary quick-button">
                                             <i className="fas fa-users fa-lg"></i> Join the Team
                                         </button>
                                     </Link>
-                                    <Link to="sponsor-section" smooth={true} duration={400}>
+                                    <Link to="sponsor-section" smooth={true} duration={800}>
                                         <button class="p-2 m-2 btn btn-lg btn-outline-success quick-button">
                                             <i className="fas fa-dollar-sign fa-lg"></i> Become a Sponsor
                                         </button>
@@ -49,8 +87,13 @@ class Home extends Component {
                             <p class="lead text-center">SATURN Robotics is a <em>FIRST Tech Challenge</em> robotics club operating out of
                              Mandarin High School in Jacksonville, Florida.</p>
                         </div>
-                        <div className="col-md-4 order-md-1 px-3">
-                            <img src="/images/FIRSTTech_IconVert_RGB.png" className="m-auto d-block img-md-fluid firstlogo"></img>
+                        <div className="col-md-4 order-md-1 px-3 p-relative">
+                            <picture>
+                                <source media="(max-width: 767px)" srcset="/images/FIRSTTech_IconHorz_RGB.png" className="d-block img-md-fluid firstlogo"></source>
+                                <source media="(min-width: 768px)" srcset="/images/FIRSTTech_IconVert_RGB.png" className="d-block img-md-fluid firstlogo"></source>
+                                <img src="/images/FIRSTTech_IconVert_RGB.png" className="d-block img-md-fluid firstlogo"></img>
+                            </picture>
+                            
                         </div>
                     </div>
                     <div className="row sponsorimage m-0 sponsor-section">
@@ -75,8 +118,8 @@ class Home extends Component {
                             </div>
                             <div className="col-md-6 mx-auto px-3">
                                 <center>
-                                <button className="p-4 btn btn-lg btn-block btn-outline-primary">View Sponsorship Packages</button>
-                                <button className="p-4 btn btn-lg btn-block btn-outline-primary">Current Sponsors</button>
+                                <a href="/sponsorpacks" className="p-4 btn btn-lg btn-block btn-outline-primary">View Sponsorship Packages</a>
+                                <a href="/sponsors" className="p-4 btn btn-lg btn-block btn-outline-primary">Current Sponsors</a>
                                 </center>
                             </div>
                     </div>
@@ -98,16 +141,8 @@ class Home extends Component {
                             </div>
                     </div>
                 </div>
-                <footer class="footer">
-                    <div class="container p-2 text-center">
-                        <span class="text-muted ">
-                            This page was made entirely by students! (Lead by Ricky, one of our lead software students.) Starting in 2018, the team developed
-                            this website from scratch using ReactJS, Bootstrap, Node.js, and MongoDB. These are frameworks that are <em>actually used in the real world! </em> 
-                            (Like, there are loads of <em>good jobs</em> out there for doing this stuff.) If you want to see more high school students learning these skills, please consider sponsoring us!
-                        </span>
-                    </div>
-                </footer>
                 
+                <Footer withSaturn={true}></Footer>
 
             </div>
         );

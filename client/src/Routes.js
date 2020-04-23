@@ -10,6 +10,8 @@ import Login from './pages/Login';
 import Stats from './pages/Stats';
 import Registration from './pages/Registration';
 import Scouting from './pages/Scouting';
+import SponsorPackages from './pages/SponsorPackages';
+import Gallery from './pages/Gallery';
 
 import {
   Route, Switch
@@ -28,6 +30,8 @@ class Routes extends Component {
           <Route exact path='/secure/scouting' component={Scouting} />
           <Route exact path='/login' component={Login} />
           <Route exact path='/registration' component={Registration} />
+          <Route exact path='/sponsorpacks' component={SponsorPackages} />
+          <Route exact path='/gallery' component={Gallery} />
           <Route path="*" component={Page404}/>
         </Switch>
       </div>

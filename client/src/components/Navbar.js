@@ -37,14 +37,17 @@ class Navbar extends Component {
         const currentuser = localStorage.getItem("firstName");
         return (
             <nav className="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
-                <div className="container">
-                <div className="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+                <div className="container-fluid">
+                <div className="navbar-collapse hide collapse w-100 order-1 order-md-0 dual-collapse">
                     <ul className="navbar-nav mr-auto">
                         <li className="nav-item" id="home">
                             <a className="nav-link" href="/">Home</a>
                         </li>
                         <li className="nav-item" id="media-kit">
                             <a className="nav-link" href="/media">Media Kit</a>
+                        </li>
+                        <li className="nav-item" id="gallery">
+                            <a className="nav-link" href="/gallery">Gallery</a>
                         </li>
                         <li className="nav-item" id="sponsors">
                             <a className="nav-link" href="/sponsors">Sponsors</a>
@@ -58,9 +61,9 @@ class Navbar extends Component {
                     </ul>
                 </div>
                 <div className="mx-auto order-0 order-md-1">
-                    <img src="/images/saturn-logo.png" alt="Logo" />
+                    <a href="/"><img src="/images/saturn-logo.png" alt="Logo" /></a>
                 </div>
-               <div className="navbar-collapse collapse w-100 order-3 dual-collapse2">
+               <div className="navbar-collapse collapse w-100 order-3 dual-collapse">
                     <ul className="navbar-nav ml-auto">
                         {loggedIn &&
                         <li className="nav-item order-md-1" id="logoff">
@@ -95,7 +98,7 @@ class Navbar extends Component {
 
                     </ul>
                 </div>
-                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse">
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 </div>

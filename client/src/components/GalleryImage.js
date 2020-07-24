@@ -5,7 +5,7 @@ class GalleryImage extends Component {
         super(props);
     }
     render() {
-        return (this.props.id <= this.props.renderLimit && <a href={this.props.src}><img class="m-2 rounded gallery-img" src={this.props.src}></img></a>);
+        return (this.props.id <= this.props.renderLimit && <a href={this.props.src}><img className="m-2 rounded gallery-img" src={this.props.src}></img></a>);
     }
 }
 

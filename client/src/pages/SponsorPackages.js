@@ -38,7 +38,7 @@ class SponsorPackages extends Component {
                                 <li>Your company's name and logo <a href="sponsors">displayed on our website.</a></li>
                             </ul>
                         <hr></hr>
-                        <blockquote class="blockquote">
+                        <blockquote className="blockquote">
                             <p><small><em>Orbiting the ringed planet Saturn and its numerous moons, the Cassini spacecraft had
                                 been a keystone of exploration of the Saturnian system and the properties of gaseous 
                                 planets in our solar system.</em></small>
@@ -51,7 +51,7 @@ class SponsorPackages extends Component {
                                 Titan to conduct a study of the moon's atmosphere and surface composition. In its second extended mission,
                                 Cassini made the first observations of a complete seasonal period for Saturn and its moons, flew between
                                 the rings and descended into the planet's atmosphere.</em></small></p>
-                                <footer class="blockquote-footer"><cite title="NASA Jet Propulsion Laboratory"><a href="https://www.jpl.nasa.gov/missions/cassini-huygens/">NASA Jet Propulsion Laboratory</a></cite></footer>
+                                <footer className="blockquote-footer"><cite title="NASA Jet Propulsion Laboratory"><a href="https://www.jpl.nasa.gov/missions/cassini-huygens/">NASA Jet Propulsion Laboratory</a></cite></footer>
                         </blockquote>
                     </div>
                     <div className="col-4">
@@ -74,7 +74,7 @@ class SponsorPackages extends Component {
                                 <li>Your company's name and logo on our banner. We bring this banner to competitions, visible to everyone who visits our pit. It's a great way to show off your brand!</li>
                             </ul>
                         <hr></hr>
-                        <blockquote class="blockquote">
+                        <blockquote className="blockquote">
                             <p><small><em>Few worlds in our solar system are as compelling as Saturn’s icy ocean moon Enceladus.
                                 A handful of worlds are thought to have liquid water oceans beneath their frozen shell, but Enceladus 
                                 sprays its ocean out into space where a spacecraft can sample it. From these samples, scientists have 
@@ -83,7 +83,7 @@ class SponsorPackages extends Component {
                                 <p><small><em>About as wide as Arizona, Enceladus also has the whitest, most reflective surface in the solar system. 
                                     The moon creates a ring of its own as it orbits Saturn—its spray of icy particles spreads out into the space 
                                     around its orbit, circling the planet to form Saturn’s E ring.</em></small></p>
-                                <footer class="blockquote-footer"><cite title="NASA Science: Solar System Exploration"><a href="https://solarsystem.nasa.gov/moons/saturn-moons/enceladus/in-depth/">
+                                <footer className="blockquote-footer"><cite title="NASA Science: Solar System Exploration"><a href="https://solarsystem.nasa.gov/moons/saturn-moons/enceladus/in-depth/">
                                     NASA Science: Solar System Exploration</a></cite></footer>
                         </blockquote>
                     </div>
@@ -102,7 +102,7 @@ class SponsorPackages extends Component {
                                 <li>Your company's name and logo in our engineering notebook.</li>
                             </ul>
                         <hr></hr>
-                        <blockquote class="blockquote">
+                        <blockquote className="blockquote">
                             <p><small><em>Saturn’s largest moon Titan is an extraordinary and exceptional world. Among 
                                 our solar system’s more than 150 known moons, Titan is the only one with a substantial 
                                 atmosphere. And of all the places in the solar system, Titan is the only place besides 
@@ -116,7 +116,7 @@ class SponsorPackages extends Component {
                                     methane. Titan’s subsurface water could be a place to harbor life as we know it, while its surface 
                                     lakes and seas of liquid hydrocarbons could conceivably harbor life that uses different chemistry 
                                     than we’re used to—that is, life as we don’t yet know it.</em></small></p>
-                                <footer class="blockquote-footer"><cite title="NASA Science: Solar System Exploration"><a href="https://solarsystem.nasa.gov/moons/saturn-moons/titan/overview/">
+                                <footer className="blockquote-footer"><cite title="NASA Science: Solar System Exploration"><a href="https://solarsystem.nasa.gov/moons/saturn-moons/titan/overview/">
                                     NASA Science: Solar System Exploration</a></cite></footer>
                         </blockquote>
                     </div>
@@ -142,7 +142,7 @@ class SponsorPackages extends Component {
                                 <li>Your company's name and logo on our business cards.</li>
                             </ul>
                         <hr></hr>
-                        <blockquote class="blockquote">
+                        <blockquote className="blockquote">
                             <p><small><em>Saturn is the sixth planet from the Sun and the second largest planet in our solar system.
                                  Adorned with a dazzling system of icy rings, Saturn is unique among the planets. It is not the only
                                   planet to have rings, but none are as spectacular or as complex as Saturn's. Like fellow gas giant
@@ -151,7 +151,7 @@ class SponsorPackages extends Component {
                                     landscapes in our solar system. From the jets of water that spray from Enceladus to the methane 
                                     lakes on smoggy Titan, the Saturn system is a rich source of scientific discovery and still holds 
                                     many mysteries.</em></small></p>
-                                <footer class="blockquote-footer"><cite title="NASA Science: Solar System Exploration"><a href="https://solarsystem.nasa.gov/planets/saturn/in-depth/">
+                                <footer className="blockquote-footer"><cite title="NASA Science: Solar System Exploration"><a href="https://solarsystem.nasa.gov/planets/saturn/in-depth/">
                                     NASA Science: Solar System Exploration</a></cite></footer>
                         </blockquote>
                     </div>
@@ -172,10 +172,10 @@ class SponsorPackages extends Component {
                                 <li>Your company's name and logo on the robot itself!</li>
                             </ul>
                         <hr></hr>
-                        <blockquote class="blockquote">
+                        <blockquote className="blockquote">
                             <p><small><em>The sun is mass of incandescent gas, a gigantic nuclear furnace</em></small></p>
                                 <p><small><em>Where hydrogen is built into helium at a temperature of millions of degrees!</em></small></p>
-                                <footer class="blockquote-footer"><cite title="They Might Be Giants"><a href="https://www.youtube.com/watch?v=Zbgul1NpEA8">
+                                <footer className="blockquote-footer"><cite title="They Might Be Giants"><a href="https://www.youtube.com/watch?v=Zbgul1NpEA8">
                                     They Might Be Giants</a></cite></footer>
                         </blockquote>
                     </div>

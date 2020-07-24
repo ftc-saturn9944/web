@@ -6,8 +6,8 @@ class Page404 extends Component {
         return (
             <div className="App">
                 <Navbar page="404" />
+                <div className="container"><h1 className="jumbo text-center">404 Not Found</h1></div>
                 
-                <h1 className="jumbo text-center">404 Not Found</h1>
 
             </div>
         );

@@ -1,15 +1,14 @@
 @import './colors.scss';
 $primary: $saturn-primary;
-
 @import '~bootstrap/scss/bootstrap';
 @import '~@fortawesome/fontawesome-free/scss/fontawesome';
 
 
 .App>.container {
-    padding-top: 60px !important;
+    padding-top: 100px !important;
 }
 .App>.container-fluid{
-    padding-top: 60px !important;
+    padding-top: 100px !important;
 }
 
 
@@ -22,10 +21,19 @@ body, html {
     color: $saturn-text;
 }
 
+p {
+    text-indent: 40px;
+}
+
 .navbar {
     background: rgba($color: $saturn-background, $alpha: 0.5) !important;
     z-index: 100;
     //box-shadow: 0px 2px 10px rgb(255, 136, 0);
+}
+@media (max-width: 1199px) {
+    .nav-link {
+        font-size: 1.5em;
+    }
 }
 
 .card-holder {
@@ -47,11 +55,11 @@ address {
 }
 
 a {
-    color: rgb(177, 80, 0);    
+    color: rgb(255, 115, 0);    
 }
 
 a:hover {
-    color: rgb(255, 115, 0);
+    color: rgb(189, 85, 0);
 }
 
 .sponsor-card {

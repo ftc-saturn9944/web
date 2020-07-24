@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Navbar from '../components/Navbar';
+import Navbar from '../../components/Navbar';
 
 class Scouting extends Component {
     constructor(props) {
@@ -86,19 +86,19 @@ class Scouting extends Component {
                                 <h2 className="d-inline">{this.state.searchMode ? 'Search' : 'Enter'} Scouting Data</h2>
                             </div>
                             <div className="card-body">
-                                <div class="custom-control custom-switch">
-                                    <input type="checkbox" class="custom-control-input" name="searchMode" id="searchMode" checked={this.state.searchMode} onChange={e => this.changeCheckbox(e)} />
-                                    <label class="custom-control-label" for="searchMode">Search Entries?</label>
+                                <div className="custom-control custom-switch">
+                                    <input type="checkbox" className="custom-control-input" name="searchMode" id="searchMode" checked={this.state.searchMode} onChange={e => this.changeCheckbox(e)} />
+                                    <label className="custom-control-label" for="searchMode">Search Entries?</label>
                                 </div>
                                 <div className="container-fluid">
                                     <div className="row">
                                         <div className="col-md-3">
                                             <h2>Team Info</h2>
-                                            <div class="form-group">
+                                            <div className="form-group">
                                                 <label htmlFor="searchTeamName">Team Name</label>
                                                 <input type="text" className="form-control" id="searchTeamName" value={this.state.searchTeamName} onChange={e => this.change(e)} />
                                             </div>
-                                            <div class="form-group">
+                                            <div className="form-group">
                                                 <label htmlFor="searchTeamNumber">Team Number</label>
                                                 <input type="number" className="form-control" id="searchTeamName" value={this.state.searchTeamName} onChange={e => this.change(e)} min="0" />
                                             </div>

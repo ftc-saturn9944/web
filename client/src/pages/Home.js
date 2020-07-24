@@ -69,22 +69,23 @@ class Home extends Component {
                                 <img src="/images/SATURN-Logo-Dark-Transparent.png" className="d-block img-fluid biglogo"></img>
                                 <center>
                                     <Link to="join-section" smooth={true} duration={800}>
-                                        <button class="p-2 m-2 btn btn-lg btn-outline-primary quick-button">
+                                        <button className="p-2 m-2 btn btn-lg btn-outline-primary quick-button">
                                             <i className="fas fa-users fa-lg"></i> Join the Team
                                         </button>
                                     </Link>
                                     <Link to="sponsor-section" smooth={true} duration={800}>
-                                        <button class="p-2 m-2 btn btn-lg btn-outline-success quick-button">
+                                        <button className="p-2 m-2 btn btn-lg btn-outline-success quick-button">
                                             <i className="fas fa-dollar-sign fa-lg"></i> Become a Sponsor
                                         </button>
                                     </Link>
                                 </center>
                             </div>
                     </div>
+                    <section>
                     <div className="row m-0 pb-5">
                         <div className="col-md-8 order-md-12 px-3">
-                            <h1 class="display-3 text-center">We are SATURN</h1>
-                            <p class="lead text-center">SATURN Robotics is a <em>FIRST Tech Challenge</em> robotics club operating out of
+                            <h1 className="display-3 text-center">We are SATURN</h1>
+                            <p className="lead text-center">SATURN Robotics is a <em>FIRST Tech Challenge</em> robotics club operating out of
                              Mandarin High School in Jacksonville, Florida.</p>
                         </div>
                         <div className="col-md-4 order-md-1 px-3 p-relative">
@@ -96,43 +97,48 @@ class Home extends Component {
                             
                         </div>
                     </div>
+                    </section>
+                    <section>
                     <div className="row sponsorimage m-0 sponsor-section">
                             <div className="sponsorgradient"></div>
                             <div className="col-12">
-                                <em class="text-white-50 caption">State Championships 2020.</em>    
+                                <em className="text-white-50 caption">State Championships 2020.</em>    
                             </div>        
                     </div>
+                    
                     <div className="row m-0">
                         <div className="col-6 px-3">
-                                <h1 class="display-4">Sponsor Us</h1>
+                                <h1 className="display-4">Sponsor Us</h1>
                         </div>
                     </div>
                     <div className="row m-0 pb-5">
                             <div className="col-md-6 px-3">
-                                <p class="lead text-left">In order to keep SATURN free of registration fees, we rely on sponsors to keep the team running.
+                                <p className="lead text-left">In order to keep SATURN free of registration fees, we rely on sponsors to keep the team running.
                                 With your contribution, we can afford to buy parts for the robot, food for our students to eat at competition,
                                 fees for competitions, and much more.</p>
-                                <p class="lead text-left">By donating or becoming a recurring sponsor, not only will you be helping dozens of high school students
+                                <p className="lead text-left">By donating or becoming a recurring sponsor, not only will you be helping dozens of high school students
                                 gain experience and knowledge in STEM activities — thereby setting them on a path for success — you'll also have your brand advertised to thousands of people at <em>FIRST Tech Challenge </em>
                                 events throughout the season. (See above image)</p>    
                             </div>
-                            <div className="col-md-6 mx-auto px-3">
+                            <div className="col-md-6 mx-auto my-auto px-3">
                                 <center>
                                 <a href="/sponsorpacks" className="p-4 btn btn-lg btn-block btn-outline-primary">View Sponsorship Packages</a>
                                 <a href="/sponsors" className="p-4 btn btn-lg btn-block btn-outline-primary">Current Sponsors</a>
                                 </center>
                             </div>
                     </div>
+                    </section>
+                    <section>
                     <div className="row m-0 pb-5 join-section">
                             <div className="col-md-6 px-3">
-                                <h1 class="display-4 text-left">Join Our Team!</h1>
-                                <p class="lead text-left">Our team is always looking for new recruits. If you are in or around the Mandarin area and think you or your child would be a good fit for this team, 
+                                <h1 className="display-4 text-left">Join Our Team!</h1>
+                                <p className="lead text-left">Our team is always looking for new recruits. If you are in or around the Mandarin area and think you or your child would be a good fit for this team, 
                                 please contact <a href="mailto:mandarinrobotics@gmail.com">MandarinRobotics@gmail.com</a> and we will get back to you as soon as possible.</p>
-                                <p class="lead text-left">The <a href="https://www.firstinspires.org/robotics/ftc/season-timeline"><em>FIRST Tech Challenge</em> season 
+                                <p className="lead text-left">The <a href="https://www.firstinspires.org/robotics/ftc/season-timeline"><em>FIRST Tech Challenge</em> season 
                                 starts in September and continues until April at the latest</a>, with biweekly meetings at Mandarin High School plus 
                                 additional meetings at our mentors' houses as needed. Prior knowlege of robotics and programming are useful, but not required. Students will 
                                 learn by doing and collaborating, with help from our experienced mentors.</p>
-                                <p class="lead text-left">Thanks to our wonderful sponsors, there are no registration fees, and you do not have to pay to be on the team.</p>    
+                                <p className="lead text-left">Thanks to our wonderful sponsors, there are no registration fees, and you do not have to pay to be on the team.</p>    
                             </div>
                             <div className="col-md-6 mx-auto px-3">
                                 <center>
@@ -140,6 +146,7 @@ class Home extends Component {
                                 </center>
                             </div>
                     </div>
+                    </section>
                 </div>
                 
                 <Footer withSaturn={true}></Footer>

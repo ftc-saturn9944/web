@@ -69,7 +69,7 @@ class Gallery extends Component {
         return <section>
                 <div className="row">
                     <div className="col-12 d-flex">
-                        <h2 class="display-4 mx-auto text-muted">{season.seasonName}: {season.period}</h2>
+                        <h2 className="display-4 mx-auto text-muted">{season.seasonName}: {season.period}</h2>
                     </div>
                 </div>
                 { (this.state.images[imgSeasonKey] && this.state.images[imgSeasonKey].length > 0) ?
@@ -82,7 +82,7 @@ class Gallery extends Component {
                     </div>
                 </div> : <div className="row">
                     <div className="col-12 d-flex">
-                        <p class="lead mx-auto text-muted">
+                        <p className="lead mx-auto text-muted">
                             Sorry, there are no images available from this season.
                         </p>
                     </div>
@@ -114,13 +114,13 @@ class Gallery extends Component {
             <div className="container-fluid gallery">
                 <div className="row">
                     <div className="col-12 d-flex">
-                        <h1 class="display-2 mx-auto">Gallery</h1>
+                        <h1 className="display-2 mx-auto">Gallery</h1>
                     </div>
                 </div>
                     <section>
                     <div className="row">
                         <div className="col-12 d-flex">
-                            <h2 class="display-4 mx-auto text-muted">{
+                            <h2 className="display-4 mx-auto text-muted">{
                             this.state.imageInfo ? this.state.imageInfo.season["skystone"].seasonName : "Loading..."
                             }: {
                             this.state.imageInfo ? this.state.imageInfo.season["skystone"].period : "Loading..."
@@ -137,7 +137,7 @@ class Gallery extends Component {
                         </div>
                     </div> : <div className="row">
                         <div className="col-12 d-flex">
-                            <p class="lead mx-auto text-muted">
+                            <p className="lead mx-auto text-muted">
                                 Sorry, there are no images available from this season.
                             </p>
                         </div>
@@ -147,7 +147,7 @@ class Gallery extends Component {
                     <section>
                 <div className="row">
                     <div className="col-12 d-flex">
-                    <h2 class="display-4 mx-auto text-muted">{
+                    <h2 className="display-4 mx-auto text-muted">{
                             this.state.imageInfo ? this.state.imageInfo.season["roverRuckus"].seasonName : "Loading..."
                             }: {
                             this.state.imageInfo ? this.state.imageInfo.season["roverRuckus"].period : "Loading..."
@@ -164,7 +164,7 @@ class Gallery extends Component {
                     </div>
                 </div> : <div className="row">
                     <div className="col-12 d-flex">
-                        <p class="lead mx-auto text-muted">
+                        <p className="lead mx-auto text-muted">
                             Sorry, there are no images available from this season.
                         </p>
                     </div>
@@ -174,7 +174,7 @@ class Gallery extends Component {
                 <section>
                 <div className="row">
                     <div className="col-12 d-flex">
-                    <h2 class="display-4 mx-auto text-muted">{
+                    <h2 className="display-4 mx-auto text-muted">{
                             this.state.imageInfo ? this.state.imageInfo.season["relicRecovery"].seasonName : "Loading..."
                             }: {
                             this.state.imageInfo ? this.state.imageInfo.season["relicRecovery"].period : "Loading..."
@@ -191,7 +191,7 @@ class Gallery extends Component {
                     </div>
                 </div> : <div className="row">
                     <div className="col-12 d-flex">
-                        <p class="lead mx-auto text-muted">
+                        <p className="lead mx-auto text-muted">
                             Sorry, there are no images available from this season.
                         </p>
                     </div>

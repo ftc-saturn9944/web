@@ -91,6 +91,11 @@
     margin: 10px 10px 10px 10px;
     justify-self: center;
 }
+@media(max-width: 1199px) {
+    .quick-button {
+        width: 100%;
+    }
+}
 
 .caption {
     margin: 10px;

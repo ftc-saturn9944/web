@@ -1,0 +1,15 @@
+@import './colors.scss';
+.sponsorlogo {
+    max-width: 90%;
+    filter: drop-shadow(1px 0px 0px $saturn-text) drop-shadow(0px 1px 0px $saturn-text) drop-shadow(-1px 0px 0px $saturn-text) drop-shadow(0px -1px 0px $saturn-text);
+    margin: 0px !important;
+}
+.sponsortext {
+    font-size: 3em;
+}
+.sponsortext a{
+    color: $saturn-text;
+}
+.sponsortext a:hover{
+    color: $saturn-text-muted;
+}

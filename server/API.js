@@ -106,6 +106,7 @@ app.post("/api/register", (req, res) => {
 
 // The "catchall" handler: for any request that doesn't
 // match one above, send back React's index.html file.
+
 app.get('*', (req, res) => {
     res.sendFile('www/index.html');
 });

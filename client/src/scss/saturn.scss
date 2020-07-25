@@ -1,12 +1,39 @@
+@import './colors.scss';
+$primary: $saturn-primary;
 @import '~bootstrap/scss/bootstrap';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
 
-#carouselComponent {
-    background: black;
+
+.App>.container {
+    padding-top: 100px !important;
+}
+.App>.container-fluid{
+    padding-top: 100px !important;
+}
+
+
+body, html {
+    //height: 100%;
+    //width: 100%;
+    //overflow-x: hidden;
+    margin: 0px;
+    background-color: $saturn-background;
+    color: $saturn-text;
+}
+
+p {
+    text-indent: 40px;
 }
 
 .navbar {
+    background: rgba($color: $saturn-background, $alpha: 0.5) !important;
     z-index: 100;
-    box-shadow: 0px 2px 10px rgb(255, 136, 0);
+    //box-shadow: 0px 2px 10px rgb(255, 136, 0);
+}
+@media (max-width: 1199px) {
+    .nav-link {
+        font-size: 1.5em;
+    }
 }
 
 .card-holder {
@@ -28,11 +55,11 @@ address {
 }
 
 a {
-    color: #048;    
+    color: rgb(255, 115, 0);    
 }
 
 a:hover {
-    color: #08c;
+    color: rgb(189, 85, 0);
 }
 
 .sponsor-card {
@@ -48,7 +75,11 @@ li.nav-item.invisible {
     padding: 0px;
     margin: 0px;
 }
-#logged-in-as .navbar-text {
+/*#logged-in-as .navbar-text {
     color: #7e7e7e;
     font-weight: 400;
+}*/
+
+hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.178);
 }

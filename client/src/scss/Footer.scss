@@ -1,0 +1,22 @@
+@import '~bootstrap/scss/bootstrap';
+.footer {
+    position: relative;
+}
+.footersaturn {
+    @include media-breakpoint-up(lg) {
+    position: absolute;
+    display: block;
+    rotate: 0deg;
+    height: 200%;
+    right: 0px;
+    bottom: 0;
+    }
+    @include media-breakpoint-down(lg) {
+        position: relative;
+        display: block;
+        max-width: 50%;
+        
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

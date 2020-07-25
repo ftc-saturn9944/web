@@ -4,13 +4,13 @@ import './index.css';
 import Routes from './Routes';
 import registerServiceWorker from './registerServiceWorker';
 
-import 'bootstrap';
+import 'bootstrap/dist/js/bootstrap';
 import './scss/saturn.scss';
 
 import {
-    HashRouter,
+    BrowserRouter,
 } from 'react-router-dom';
 
-ReactDOM.render(<HashRouter><Routes /></HashRouter>, document.getElementById('root'));
+ReactDOM.render(<BrowserRouter forceRefresh={false} basename={'/'}><Routes /></BrowserRouter>, document.getElementById('root'));
 
 registerServiceWorker();

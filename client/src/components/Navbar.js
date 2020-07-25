@@ -36,60 +36,29 @@ class Navbar extends Component {
         const loggedIn = localStorage.getItem("authKey") !== null;
         const currentuser = localStorage.getItem("firstName");
         return (
-            <nav className="navbar navbar-expand-md navbar-dark bg-dark">
-                <div className="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
-                    <ul className="navbar-nav mr-auto">
-                        <li className="nav-item" id="team-info">
-                            <a className="nav-link" href="#/">Team Info</a>
-                        </li>
-                        <li className="nav-item" id="media-kit">
-                            <a className="nav-link" href="#/media">Media Kit</a>
-                        </li>
-                        <li className="nav-item" id="sponsors">
-                            <a className="nav-link" href="#/sponsors">Sponsors</a>
-                        </li>
-                        <li className="nav-item" id="point-counter">
-                            <a className="nav-link" href="#/pointcounter">Point Counter</a>
-                        </li>
-                        <li className="nav-item" id="registration">
-                            <a className="nav-link" href="#/registration">Registration</a>
-                        </li>
-                    </ul>
+            <nav className="navbar fixed-top navbar-expand navbar-dark bg-dark">
+                <div className="container-fluid flex-column">
+                    <div className="row">
+                        <div className="col-12">
+                            <a className="navbar-brand mx-auto" href="/"><img src="/images/saturn-logo.png" alt="Logo" /></a>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-12">
+                            <ul className="navbar-nav mr-auto">
+                                <li className="nav-item" id="home">
+                                    <a className="nav-link" href="/">Home</a>
+                                </li>
+                                <li className="nav-item" id="gallery">
+                                    <a className="nav-link" href="/gallery">Gallery</a>
+                                </li>
+                                <li className="nav-item" id="sponsors">
+                                    <a className="nav-link" href="/sponsors">Sponsors</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div className="mx-auto order-0 order-md-1">
-                    <img src="/images/saturn-logo.png" alt="Logo" />
-                </div>
-                <div className="navbar-collapse collapse w-100 order-3 dual-collapse2">
-                    <ul className="navbar-nav ml-auto">
-
-                        <li className={"nav-item order-md-1" + (loggedIn ? "" : " invisible")} id="logoff">
-                            <a className="nav-link" href="javascript:void;" onClick={this.logout.bind(this)}>Log Off</a>
-                        </li>
-                        <li className={"nav-item order-md-0" + (loggedIn ? "" : " invisible")} id="logged-in-as">
-                            <span className="navbar-text"><em>Logged in as <strong>{currentuser}</strong>.</em></span>
-                        </li>
-                        <li className={"nav-item dropdown" + (loggedIn ? "" : " invisible")} id="secure-pages">
-                            <a className="nav-link dropdown-toggle" href="javascript:void;" role="button" data-toggle="dropdown">
-                                Secure Pages
-                            </a>
-                            <div className="dropdown-menu">
-                                <a className="dropdown-item" href="#/secure/stats">
-                                    Game Stats
-                                </a>
-                                <a className="dropdown-item" href="#/secure/scouting">
-                                    Scouting
-                                </a>
-                            </div>
-                        </li>
-                        <li className={"nav-item" + (loggedIn ? " invisible" : "")} id="login">
-                            <a className="nav-link" href="#/login">Log In</a>
-                        </li>
-
-                    </ul>
-                </div>
-                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
             </nav>
         );
     }

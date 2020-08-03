@@ -82,19 +82,26 @@ class Home extends Component {
                             </div>
                     </div>
                     <section>
-                    <div className="row m-0 pb-5">
-                        <div className="col-md-8 order-md-12 px-3">
+                    <div className="row m-0 mx-5 pb-5">
+                        <div className="col-lg-8 order-lg-12 px-3">
                             <h1 className="display-3 text-center">We are SATURN</h1>
-                            <p className="lead text-center">SATURN Robotics is a <em>FIRST Tech Challenge</em> robotics club operating out of
-                             Mandarin High School in Jacksonville, Florida.</p>
+                            <p className="lead">SATURN Robotics is a <em>FIRST Tech Challenge</em> robotics club operating out of
+                             Mandarin High School in Jacksonville, Florida. Started in 2016, our team has helped local high-school students engage in STEM
+                             by designing, building, and programming robots for competition. </p>
+                             <p className="lead">On the team, students get hands-on experience building and programming robots, 
+                             and work as a team to accomplish goals. This experience will not only help them learn new things and pursue their interests, but will help their career path
+                             by allowing them to develop practical skills and knowledge in STEM fields.
+                             </p>
                         </div>
-                        <div className="col-md-4 order-md-1 px-3 p-relative">
-                            <picture>
-                                <source media="(max-width: 767px)" srcset="/images/FIRSTTech_IconHorz_RGB.png" className="d-block img-md-fluid firstlogo"></source>
-                                <source media="(min-width: 768px)" srcset="/images/FIRSTTech_IconVert_RGB.png" className="d-block img-md-fluid firstlogo"></source>
-                                <img src="/images/FIRSTTech_IconVert_RGB.png" className="d-block img-md-fluid firstlogo"></img>
-                            </picture>
-                            
+                        <div className="col-lg-4 order-lg-1 p-relative text-center">
+                           <div className="pt-5 pb-2">
+                                <picture>
+                                    <source media="(min-width: 1600px)" srcset="/images/FIRSTTech_IconHorz_RGB.png" className="d-block img-md-fluid firstlogo mx-auto"></source>
+                                    <source media="(min-width: 991px)" srcset="/images/FIRSTTech_IconVert_RGB.png" className="d-block img-md-fluid firstlogo mx-auto"></source>
+                                    <img src="/images/FIRSTTech_IconHorz_RGB.png" className="d-block img-md-fluid firstlogo mx-auto" ></img>
+                                </picture>
+                           </div>
+                            <h1 className="display-lg-4 display-3">Team #9944</h1>
                         </div>
                     </div>
                     </section>
@@ -106,12 +113,12 @@ class Home extends Component {
                             </div>        
                     </div>
                     
-                    <div className="row m-0">
+                    <div className="row m-0 mx-5">
                         <div className="col-6 px-3">
                                 <h1 className="display-4">Sponsor Us</h1>
                         </div>
                     </div>
-                    <div className="row m-0 pb-5">
+                    <div className="row m-0 pb-5 mx-5">
                             <div className="col-md-6 px-3">
                                 <p className="lead text-left">In order to keep SATURN free of registration fees, we rely on sponsors to keep the team running.
                                 With your contribution, we can afford to buy parts for the robot, food for our students to eat at competition,
@@ -129,7 +136,7 @@ class Home extends Component {
                     </div>
                     </section>
                     <section>
-                    <div className="row m-0 pb-5 join-section">
+                    <div className="row m-0 pb-5 mx-5 join-section">
                             <div className="col-md-6 px-3">
                                 <h1 className="display-4 text-left">Join Our Team!</h1>
                                 <p className="lead text-left">Our team is always looking for new recruits. If you are in or around the Mandarin area and think you or your child would be a good fit for this team, 

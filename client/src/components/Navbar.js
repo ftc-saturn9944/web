@@ -55,6 +55,9 @@ class Navbar extends Component {
                                 <li className="nav-item" id="sponsors">
                                     <a className="nav-link" href="/sponsors">Sponsors</a>
                                 </li>
+                                <li className="nav-item" id="contact">
+                                    <a className="nav-link" href="/contact">Contact</a>
+                                </li>
                             </ul>
                         </div>
                     </div>

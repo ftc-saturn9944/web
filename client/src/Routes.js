@@ -6,6 +6,7 @@ import Page404 from './pages/404';
 import Sponsors from './pages/Sponsors';
 import SponsorPackages from './pages/SponsorPackages';
 import Gallery from './pages/Gallery';
+import Contact from './pages/Contact';
 
 import {
   Route, Switch
@@ -20,6 +21,7 @@ class Routes extends Component {
           <Route exact path='/sponsors' component={Sponsors} />
           <Route exact path='/sponsorpacks' component={SponsorPackages} />
           <Route exact path='/gallery' component={Gallery} />
+          <Route exact-path="/contact" component={Contact} />
           <Route path="*" component={Page404}/>
         </Switch>
       </div>

@@ -22,8 +22,17 @@ class SponsorPackages extends Component {
                 <div className="row">
                     <div className="col-12 justify-content-left">
                         <p className="lead">By sponsoring our team, you'll not only be helping the next generation of programmers and engineers learn the skills
-                        they'll need to be successful &mdash; you'll also get some perks of your own, too. Based on your contribution, your brand will be shown to thousands of
-                        attendees at <em>FIRST Tech Challenge</em> events throughout the season. It will appear on our website, on business cards, or even on the robot itself.</p>
+                        they'll need to be successful &mdash; you'll also get some perks of your own, too. Based on your contribution, your brand can be shown to thousands of
+                        attendees at <em>FIRST Tech Challenge</em> events throughout the season. It can appear on our website, on business cards, or even on the robot itself.</p>
+                        <div className="mb-5">
+                            <p className="lead text-bold"><em>If you are interested in sponsoring us, please contact us through our email:</em></p>
+                            <a href="mailto:mandarinrobotics@gmail.com?subject=I'm interested in sponsoring the team.&body=I am interested in sponsoring SATURN Robotics.">
+                                <div>
+                                    <button className="btn-circle disabled btn-xl btn-primary mr-4"><i className="fa fa-envelope"></i></button>
+                                    <span className="lead" style={{fontSize: "2em"}}>MandarinRobotics@gmail.com</span>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div className="row">

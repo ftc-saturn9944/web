@@ -5,6 +5,7 @@ const bodyParser = require('body-parser');  //Body Parser - Allows us to access 
 const fileUpload = require('express-fileupload');
 const morgan = require('morgan') //Morgan - Server Logger
 
+const path = require('path');
 const uuid = require('uuid/v4');
 const jwt = require('jsonwebtoken');
 const mongo = require('./mongo')();
@@ -19,10 +20,10 @@ const app = express();
 app.use(compression());
 app.use(bodyParser({ limit: '50mb' }));
 app.use(fileUpload());
-app.use(morgan('combined'))
+app.use(morgan('combined'));
 
 // Serve static files from the React app
-app.use(express.static('www'));
+app.use("/", express.static(path.join(__dirname,'../www')));
 
 //Set up route for the url at /api/hello, and send a string as a response.
 app.get('/api/hello', (req, res) => {
@@ -108,7 +109,7 @@ app.post("/api/register", (req, res) => {
 // match one above, send back React's index.html file.
 
 app.get('*', (req, res) => {
-    res.sendFile('www/index.html');
+    res.sendFile(path.join(__dirname, '../www/index.html'));
 });
 
 //Listen for traffic on port 5000

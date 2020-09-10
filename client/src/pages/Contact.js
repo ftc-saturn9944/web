@@ -15,19 +15,19 @@ class Contact extends Component {
             <Navbar page="contact"></Navbar>
             <div className="container">
                 <div className="row">
-                    <div className="col-12justify-content-left">
-                        <h1 className="display-2 ">Contact Us</h1>
+                    <div className="col-12">
+                        <h1 className="display-3">Contact Us</h1>
                     </div>
                 </div>
                 <div className="row my-5">
                 <div className="col-lg-6 text-center">
-                    <a href="mailto:mandarinrobotics@gmail.com">
+                    <a className="email-link" href="mailto:mandarinrobotics@gmail.com">
                         <div className="mb-5">
                             <button className="btn-circle disabled btn-xl btn-primary mr-4"><i className="fa fa-envelope"></i></button><br />
                             <span className="lead" style={{fontSize: "2em"}}>MandarinRobotics@gmail.com</span>
                         </div>
                     </a>
-                    <a href="https://goo.gl/maps/A7BN6nNCR82SKeQZ7">
+                    <a className="email-link" href="https://goo.gl/maps/A7BN6nNCR82SKeQZ7">
                         <div>
                             <button className="btn-circle disabled btn-xl btn-primary mr-4"><i className="fa fa-map"></i></button><br />
                             <span className="lead" style={{fontSize: "2em"}}>Mandarin High School<br />4831 Greenland Rd, Jacksonville, FL 32258</span><br />

@@ -33,6 +33,25 @@ body, html {
     .display-4 {
         font-size: 3rem;
     }
+    
+}
+@media (max-width: 767px) {
+    .email-link {
+        text-align: center;
+    }
+    .email-link span {
+        font-size: 1.5em !important;
+        margin: 0 auto 0 auto !important;
+        
+    }
+
+    .email-link div {
+        margin: 0 auto 0 auto;
+    }
+    .email-link .btn-circle {
+        display: block;
+        margin: 0 auto 0 auto !important;
+    }
 }
 
 .navbar {
@@ -97,7 +116,7 @@ hr {
 .btn-circle {
     width: 30px;
     height: 30px;
-    padding: 6px 0px;
+    padding: 0px;
     border-radius: 15px;
     text-align: center;
     font-size: 12px;
@@ -106,7 +125,7 @@ hr {
 .btn-circle.btn-lg {
     width: 50px;
     height: 50px;
-    padding: 8px 5px;
+    padding: 0px;
     border-radius: 25px;
     font-size: 18px;
     line-height: 1.33;
@@ -115,7 +134,7 @@ hr {
 .btn-circle.btn-xl {
     width: 70px;
     height: 70px;
-    padding: 10px 16px;
+    padding: 0px;
     border-radius: 35px;
     font-size: 34px;
     line-height: 1.33;

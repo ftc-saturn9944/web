@@ -68,13 +68,13 @@ class Home extends Component {
                             <div className="col-md-8 mx-auto my-auto">
                                 <img src="/images/SATURN-Logo-Dark-Transparent.png" className="d-block img-fluid biglogo"></img>
                                 <center>
-                                    <Link to="join-section" smooth={true} duration={800}>
-                                        <button className="p-2 m-2 btn btn-lg btn-outline-primary quick-button">
+                                    <Link to="join-section" smooth={true} duration={800} offset={-150}>
+                                        <button className="p-2 mx-0 mx-md-2 my-2 btn btn-lg btn-outline-primary quick-button">
                                             <i className="fas fa-users fa-lg"></i> Join the Team
                                         </button>
                                     </Link>
                                     <Link to="sponsor-section" smooth={true} duration={800}>
-                                        <button className="p-2 m-2 btn btn-lg btn-outline-success quick-button">
+                                        <button className="p-2 mx-0 mx-md-2 my-2 btn btn-lg btn-outline-success quick-button">
                                             <i className="fas fa-dollar-sign fa-lg"></i> Become a Sponsor
                                         </button>
                                     </Link>
@@ -82,7 +82,7 @@ class Home extends Component {
                             </div>
                     </div>
                     <section>
-                    <div className="row m-0 mx-5 pb-5">
+                    <div className="row m-0 mx-md-5 pb-5">
                         <div className="col-lg-8 order-lg-12 px-3">
                             <h1 className="display-3 text-center">We are SATURN</h1>
                             <p className="lead">SATURN Robotics is a <em>FIRST Tech Challenge</em> robotics club operating out of
@@ -113,12 +113,12 @@ class Home extends Component {
                             </div>        
                     </div>
                     
-                    <div className="row m-0 mx-5">
+                    <div className="row m-0 mx-md-5">
                         <div className="col-6 px-3">
                                 <h1 className="display-4">Sponsor Us</h1>
                         </div>
                     </div>
-                    <div className="row m-0 pb-5 mx-5">
+                    <div className="row m-0 pb-5 mx-md-5">
                             <div className="col-md-6 px-3">
                                 <p className="lead text-left">In order to keep SATURN free of registration fees, we rely on sponsors to keep the team running.
                                 With your contribution, we can afford to buy parts for the robot, food for our students to eat at competition,
@@ -136,7 +136,7 @@ class Home extends Component {
                     </div>
                     </section>
                     <section>
-                    <div className="row m-0 pb-5 mx-5 join-section">
+                    <div className="row m-0 pb-5 mx-md-5 join-section">
                             <div className="col-md-6 px-3">
                                 <h1 className="display-4 text-left">Join Our Team!</h1>
                                 <p className="lead text-left">Our team is always looking for new recruits. If you are in or around the Mandarin area and think you or your child would be a good fit for this team, 

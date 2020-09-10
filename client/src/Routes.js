@@ -21,8 +21,8 @@ class Routes extends Component {
           <Route exact path='/sponsors' component={Sponsors} />
           <Route exact path='/sponsorpacks' component={SponsorPackages} />
           <Route exact path='/gallery' component={Gallery} />
-          <Route exact-path="/contact" component={Contact} />
-          <Route path="*" component={Page404}/>
+          <Route exact path="/contact" component={Contact} />
+          <Route component={Page404}/>
         </Switch>
       </div>
     );

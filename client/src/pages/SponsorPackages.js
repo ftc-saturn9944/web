@@ -26,7 +26,7 @@ class SponsorPackages extends Component {
                         attendees at <em>FIRST Tech Challenge</em> events throughout the season. It can appear on our website, on business cards, or even on the robot itself.</p>
                         <div className="mb-5">
                             <p className="lead text-bold"><em>If you are interested in sponsoring us, please contact us through our email:</em></p>
-                            <a href="mailto:mandarinrobotics@gmail.com?subject=I'm interested in sponsoring the team.&body=I am interested in sponsoring SATURN Robotics.">
+                            <a className="email-link" href="mailto:mandarinrobotics@gmail.com?subject=I'm interested in sponsoring the team.&body=I am interested in sponsoring SATURN Robotics.">
                                 <div>
                                     <button className="btn-circle disabled btn-xl btn-primary mr-4"><i className="fa fa-envelope"></i></button>
                                     <span className="lead" style={{fontSize: "2em"}}>MandarinRobotics@gmail.com</span>
@@ -36,12 +36,15 @@ class SponsorPackages extends Component {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-12">
+                    <div className="col-12 rank-name">
                         <h2 className="display-4">Cassini &mdash; <em>$1 to $99</em></h2>
                     </div>
                 </div>
-                <div className="row">
-                    <div className="col-8">
+                <div className="row mb-4">
+                <div className="col-md-4 order-md-2">
+                        <img src="/images/sponsors/rank-cassini.png" width="100%"></img>
+                    </div>
+                    <div className="col-md-8 order-md-1">
                         <h3 className="display-5">Includes:</h3>
                             <ul>
                                 <li>Your company's name and logo <a href="sponsors">displayed on our website.</a></li>
@@ -63,20 +66,18 @@ class SponsorPackages extends Component {
                                 <footer className="blockquote-footer"><cite title="NASA Jet Propulsion Laboratory"><a href="https://www.jpl.nasa.gov/missions/cassini-huygens/">NASA Jet Propulsion Laboratory</a></cite></footer>
                         </blockquote>
                     </div>
-                    <div className="col-4">
-                        <img src="/images/sponsors/rank-cassini.png" width="100%"></img>
-                    </div>
+                    
                 </div>
                 <div className="row">
-                    <div className="col-8 d-flex ml-auto">
+                    <div className="col-8 ml-auto rank-name">
                         <h2 className="display-4 mr-auto">Enceladus &mdash; <em>$100 to $299</em></h2>
                     </div>
                 </div>
-                <div className="row">
-                    <div className="col-4">
+                <div className="row mb-4">
+                    <div className="col-md-4">
                         <img src="/images/sponsors/rank-enceladus.png" width="100%"></img>
                     </div>
-                    <div className="col-8">
+                    <div className="col-md-8">
                          <h3 className="display-5">Includes:</h3>
                             <ul>
                                 <li>Your company's name and logo <a href="sponsors">displayed on our website.</a></li>
@@ -98,12 +99,15 @@ class SponsorPackages extends Component {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-12 d-flex">
-                        <h2 className="display-4 mr-auto">Titan &mdash; <em>$300 to $499</em></h2>
+                    <div className="col-8 rank-name">
+                        <h2 className="display-4">Titan &mdash; <em>$300 to $499</em></h2>
                     </div>
                 </div>
-                <div className="row">
-                    <div className="col-8">
+                <div className="row mb-4">
+                <div className="col-md-4 order-md-2">
+                        <img src="/images/sponsors/rank-titan.png" width="100%"></img>
+                    </div>
+                    <div className="col-md-8 order-md-1">
                          <h3 className="display-5">Includes:</h3>
                             <ul>
                                 <li>Your company's name and logo <a href="sponsors">displayed on our website.</a></li>
@@ -129,16 +133,14 @@ class SponsorPackages extends Component {
                                     NASA Science: Solar System Exploration</a></cite></footer>
                         </blockquote>
                     </div>
-                    <div className="col-4">
-                        <img src="/images/sponsors/rank-titan.png" width="100%"></img>
-                    </div>
+                    
                 </div>
                 <div className="row">
-                    <div className="col-8 ml-auto d-flex">
+                    <div className="col-8 ml-auto rank-name">
                         <h2 className="display-4 mr-auto"><b>SATURN</b> &mdash; <em>$500 to $999</em></h2>
                     </div>
                 </div>
-                <div className="row">
+                <div className="row mb-4">
                     <div className="col-4">
                         <img src="/images/sponsors/rank-saturn.png" width="100%"></img>
                     </div>
@@ -166,11 +168,11 @@ class SponsorPackages extends Component {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-8 mr-auto d-flex">
-                        <h2 className="display-4 mr-auto sun-rank-ooh"><b>Sun</b> &mdash; <em>$1000+</em></h2>
+                    <div className="col-8 rank-name">
+                        <h2 className="display-4 sun-rank-ooh"><b>Sun</b> &mdash; <em>$1000+</em></h2>
                     </div>
                 </div>
-                <div className="row">
+                <div className="row mb-4">
                     <div className="col-8">
                          <h3 className="display-5">Includes:</h3>
                             <ul>

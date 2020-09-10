@@ -20,6 +20,20 @@ body, html {
     background-color: $saturn-background;
     color: $saturn-text;
 }
+@media (max-width: 1199px) {
+    .display-1 {
+        font-size: 5.5rem;
+    }
+    .display-2 {
+        font-size: 5rem;
+    }
+    .display-3 {
+        font-size: 4rem;
+    }
+    .display-4 {
+        font-size: 3rem;
+    }
+}
 
 .navbar {
     background: rgba($color: $saturn-background, $alpha: 0.5) !important;
@@ -28,7 +42,7 @@ body, html {
 }
 @media (max-width: 1199px) {
     .nav-link {
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
 }
 

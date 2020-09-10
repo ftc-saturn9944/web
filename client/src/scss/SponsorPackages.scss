@@ -1,3 +1,25 @@
 .sun-rank-ooh {
     text-shadow: 0px 0px 10px rgba($color: #ffa600, $alpha: 1.0),0px 0px 10px rgba($color: #ffa600, $alpha: 1.0),0px 0px 10px rgba($color: #ffa600, $alpha: 1.0);
 }
+@media(max-width: 1199px) {
+    .email-link {
+        text-align: center;
+    }
+    .email-link span {
+        font-size: 1.5em !important;
+        margin: 0 auto 0 auto !important;
+        
+    }
+
+    .email-link div {
+        margin: 0 auto 0 auto;
+    }
+    .email-link .btn-circle {
+        display: block;
+        margin: 0 auto 0 auto !important;
+    }
+    .rank-name {
+        text-align: center !important;
+        margin: 0 auto 0 auto !important;
+    }
+}

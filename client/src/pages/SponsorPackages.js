@@ -108,7 +108,7 @@ class SponsorPackages extends Component {
                             <ul>
                                 <li>Your company's name and logo <a href="sponsors">displayed on our website.</a></li>
                                 <li>Your company's name and logo on our banner.</li>
-                                <li>Your company's name and logo in our engineering notebook.</li>
+                                <li>Your company's name and logo in our engineering documentation.</li>
                             </ul>
                         <hr></hr>
                         <blockquote className="blockquote">
@@ -147,7 +147,7 @@ class SponsorPackages extends Component {
                             <ul>
                                 <li>Your company's name and logo <a href="sponsors">displayed on our website.</a></li>
                                 <li>Your company's name and logo on our banner.</li>
-                                <li>Your company's name and logo in the engineering notebook.</li>
+                                <li>Your company's name and logo in the engineering documentation.</li>
                                 <li>Your company's name and logo on our business cards.</li>
                             </ul>
                         <hr></hr>
@@ -176,7 +176,7 @@ class SponsorPackages extends Component {
                             <ul>
                                 <li>Your company's name and logo <a href="sponsors">displayed on our website.</a></li>
                                 <li>Your company's name and logo on our banner.</li>
-                                <li>Your company's name and logo in the engineering notebook.</li>
+                                <li>Your company's name and logo in the engineering documentation.</li>
                                 <li>Your company's name and logo on our business cards.</li>
                                 <li>Your company's name and logo on the robot itself!</li>
                             </ul>

@@ -38,6 +38,10 @@ class Sponsors extends Component {
                         <img src="/images/sponsors/renjax.png" className="d-block img-md-fluid mx-auto sponsorlogo"></img>
                         <h3 className="sponsortext text-center"><a href="https://renaissancejax.org/">Renaissance Jax</a></h3>
                     </div>
+                    <div className="col-md-4 order-md-1 px-3 p-relative">
+                        <img src="/images/sponsors/bolts-and-bytes.png" className="d-block img-md-fluid mx-auto sponsorlogo"></img>
+                        <h3 className="sponsortext text-center"><a href="https://www.boltsandbytes.club/">Bolts & bytes</a></h3>
+                    </div>
                 </div>
                 <div className="row">
                     

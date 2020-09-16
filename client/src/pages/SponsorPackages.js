@@ -221,7 +221,7 @@ class SponsorPackages extends Component {
                         </blockquote>
                     </div>
                     <div className="col-4">
-                        <img src="/images/sponsors/rank-alpha-centauri.png" width="100%"></img>
+                        <img src="/images/sponsors/rank-alpha-centauri.jpg" width="100%"></img>
                     </div>
                 </div>
                     

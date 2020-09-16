@@ -169,7 +169,7 @@ class SponsorPackages extends Component {
                 </div>
                 <div className="row">
                     <div className="col-8 rank-name">
-                        <h2 className="display-4 sun-rank-ooh"><b>Sun</b> &mdash; <em>$1000+</em></h2>
+                        <h2 className="display-4 sun-rank-ooh"><b>Sun</b> &mdash; <em>$1000 to $1500</em></h2>
                     </div>
                 </div>
                 <div className="row mb-4">
@@ -194,7 +194,36 @@ class SponsorPackages extends Component {
                         <img src="/images/sponsors/rank-sun.png" width="100%"></img>
                     </div>
                 </div>
-                
+                <div className="row">
+                    <div className="col-8 rank-name">
+                        <h2 className="display-4 sun-rank-ooh"><b>Alpha Centauri</b> &mdash; <em>$1500+</em></h2>
+                    </div>
+                </div>
+                <div className="row mb-4">
+                    <div className="col-8">
+                         <h3 className="display-5">Includes:</h3>
+                            <ul>
+                                <li>Your company's name and logo <a href="sponsors" target="_blank">displayed on our website.</a></li>
+                                <li>Your company's name and logo on our banner.</li>
+                                <li>Your company's name and logo in the engineering documentation.</li>
+                                <li>Your company's name and logo on our business cards.</li>
+                                <li>Your company's name and logo on the robot itself!</li>
+                                <li>Your company's name and logo added to our uniforms!</li>
+                            </ul>
+                        <hr></hr>
+                        <blockquote className="blockquote">
+                            <p><small><em>From the orbit of Saturn, light (as well as Cassini's radio signal) takes a little more 
+                                than an hour travel to Earth. The distance to Alpha Centauri is so great that light from these stars 
+                                takes more than four years to reach our Solar System. Thus, although Saturn seems a distant frontier, 
+                                the nearest star is almost 30,000 times farther away</em></small></p>
+                                <footer className="blockquote-footer"><cite title="NASA Science: Stellar Horizon"><a href="https://solarsystem.nasa.gov/resources/14116/stellar-horizon/">
+                                    NASA Science: Stellar Horizon</a></cite></footer>
+                        </blockquote>
+                    </div>
+                    <div className="col-4">
+                        <img src="/images/sponsors/rank-alpha-centauri.png" width="100%"></img>
+                    </div>
+                </div>
                     
             </div>
             <Footer withSaturn={false}></Footer>

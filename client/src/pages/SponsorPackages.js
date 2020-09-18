@@ -65,12 +65,11 @@ class SponsorPackages extends Component {
                                 the rings and descended into the planet's atmosphere.</em></small></p>
                                 <footer className="blockquote-footer"><cite title="NASA Jet Propulsion Laboratory"><a href="https://www.jpl.nasa.gov/missions/cassini-huygens/" target="_blank">NASA Jet Propulsion Laboratory</a></cite></footer>
                         </blockquote>
-                    </div>
-                    
+                    </div>    
                 </div>
                 <div className="row">
                     <div className="col-8 ml-auto rank-name">
-                        <h2 className="display-4 mr-auto">Enceladus &mdash; <em>$100 to $299</em></h2>
+                        <h2 className="display-4 mr-auto enceladus-rank">Enceladus &mdash; <em>$100 to $299</em></h2>
                     </div>
                 </div>
                 <div className="row mb-4">
@@ -100,7 +99,7 @@ class SponsorPackages extends Component {
                 </div>
                 <div className="row">
                     <div className="col-8 rank-name">
-                        <h2 className="display-4">Titan &mdash; <em>$300 to $499</em></h2>
+                        <h2 className="display-4 titan-rank">Titan &mdash; <em>$300 to $499</em></h2>
                     </div>
                 </div>
                 <div className="row mb-4">
@@ -137,7 +136,7 @@ class SponsorPackages extends Component {
                 </div>
                 <div className="row">
                     <div className="col-8 ml-auto rank-name">
-                        <h2 className="display-4 mr-auto"><b>SATURN</b> &mdash; <em>$500 to $999</em></h2>
+                        <h2 className="display-4 mr-auto saturn-rank"><b>SATURN</b> &mdash; <em>$500 to $999</em></h2>
                     </div>
                 </div>
                 <div className="row mb-4">
@@ -169,7 +168,7 @@ class SponsorPackages extends Component {
                 </div>
                 <div className="row">
                     <div className="col-8 rank-name">
-                        <h2 className="display-4 sun-rank-ooh"><b>Sun</b> &mdash; <em>$1000 to $1500</em></h2>
+                        <h2 className="display-4 sun-rank"><b>Sun</b> &mdash; <em>$1000 to $1499</em></h2>
                     </div>
                 </div>
                 <div className="row mb-4">
@@ -196,7 +195,7 @@ class SponsorPackages extends Component {
                 </div>
                 <div className="row">
                     <div className="col-8 rank-name">
-                        <h2 className="display-4 sun-rank-ooh"><b>Alpha Centauri</b> &mdash; <em>$1500+</em></h2>
+                        <h2 className="display-4 alpha-rank-ooh"><b>Alpha Centauri</b> &mdash; <em>$1500+</em></h2>
                     </div>
                 </div>
                 <div className="row mb-4">

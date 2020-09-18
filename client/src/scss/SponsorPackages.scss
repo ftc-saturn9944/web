@@ -1,5 +1,45 @@
-.sun-rank-ooh {
+.alpha-rank-ooh {
+    text-shadow: 0px 0px 10px rgba($color: #ff4800, $alpha: 1.0),0px 0px 10px rgba($color: #ff4800, $alpha: 1.0),0px 0px 10px rgba($color: #ff4800, $alpha: 1.0);
+}
+@media(max-width: 1199px) {
+    
+    .rank-name {
+        text-align: center !important;
+        margin: 0 auto 0 auto !important;
+    }
+}
+.sun-rank {
     text-shadow: 0px 0px 10px rgba($color: #ffa600, $alpha: 1.0),0px 0px 10px rgba($color: #ffa600, $alpha: 1.0),0px 0px 10px rgba($color: #ffa600, $alpha: 1.0);
+}
+@media(max-width: 1199px) {
+    
+    .rank-name {
+        text-align: center !important;
+        margin: 0 auto 0 auto !important;
+    }
+}
+.saturn-rank {
+    text-shadow: 0px 0px 10px rgba($color: #a8895a, $alpha: 1.0),0px 0px 10px rgba($color: #a8895a, $alpha: 1.0),0px 0px 10px rgba($color: #a8895a, $alpha: 1.0);
+}
+@media(max-width: 1199px) {
+    
+    .rank-name {
+        text-align: center !important;
+        margin: 0 auto 0 auto !important;
+    }
+}
+.titan-rank {
+    text-shadow: 0px 0px 10px rgba($color: #67917b, $alpha: 1.0),0px 0px 10px rgba($color: #67917b, $alpha: 1.0),0px 0px 10px rgba($color: #67917b, $alpha: 1.0);
+}
+@media(max-width: 1199px) {
+    
+    .rank-name {
+        text-align: center !important;
+        margin: 0 auto 0 auto !important;
+    }
+}
+.enceladus-rank {
+    text-shadow: 0px 0px 10px rgba($color: #5f6266, $alpha: 1.0),0px 0px 10px rgba($color: #5f6266, $alpha: 1.0),0px 0px 10px rgba($color: #5f6266, $alpha: 1.0);
 }
 @media(max-width: 1199px) {
     

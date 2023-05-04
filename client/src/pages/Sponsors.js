@@ -42,7 +42,7 @@ class Sponsors extends Component {
                         <h3 className="sponsortext text-center alpha-rank-ooh"><a href="javascript:void">Majorspot, Inc.</a><hr></hr></h3>
                     </div>
                     <div className="col-md-6 my-5 mx-auto order-md-1 px-3 p-relative">
-                        <img src="/images/sponsors/eisman_russo.png" className="d-block img-md-fluid mx-auto sponsorlogo"></img>
+                        <img src="/images/sponsors/eisman_russo.jpeg" className="d-block img-md-fluid mx-auto sponsorlogo"></img>
                         <h3 className="sponsortext text-center alpha-rank-ooh"><a href="https://www.eismanandrusso.com/">Eisman & Russo.</a><hr></hr></h3>
                     </div>
                 </div>
@@ -59,7 +59,7 @@ class Sponsors extends Component {
                         <h3 className="sponsortext text-center titan-rank"><a href="https://www.boltsandbytes.club/" target="_blank">Bolts & Bytes</a><hr></hr></h3>
                     </div>
                     <div className="col-md-4 my-5 mx-auto order-md-1 px-3 p-relative">
-                        <img src="/images/sponsors/first_coast-signs.png" className="d-block img-md-fluid mx-auto sponsorlogo"></img>
+                        <img src="/images/sponsors/first_coast_signs.png" className="d-block img-md-fluid mx-auto sponsorlogo"></img>
                         <h3 className="sponsortext text-center titan-rank"><a href="https://www.jacksonvillesignsandwraps.com/" target="_blank">First Coast Signs Inc.</a><hr></hr></h3>
                     </div>
                 </div>
